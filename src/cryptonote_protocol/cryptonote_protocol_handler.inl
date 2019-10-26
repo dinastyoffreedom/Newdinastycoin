@@ -44,8 +44,8 @@
 #include "net/network_throttle-detail.hpp"
 #include "common/pruning.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "net.cn"
+#undef DINASTYCOIN_DEFAULT_LOG_CATEGORY
+#define DINASTYCOIN_DEFAULT_LOG_CATEGORY "net.cn"
 
 #define MLOG_P2P_MESSAGE(x) MCINFO("net.p2p.msg", context << x)
 #define MLOGIF_P2P_MESSAGE(init, test, x) \
@@ -60,7 +60,7 @@
   } while(0)
 
 #define MLOG_PEER_STATE(x) \
-  MCINFO(MONERO_DEFAULT_LOG_CATEGORY, context << "[" << epee::string_tools::to_string_hex(context.m_pruning_seed) << "] state: " << x << " in state " << cryptonote::get_protocol_state_string(context.m_state))
+  MCINFO(DINASTYCOIN_DEFAULT_LOG_CATEGORY, context << "[" << epee::string_tools::to_string_hex(context.m_pruning_seed) << "] state: " << x << " in state " << cryptonote::get_protocol_state_string(context.m_state))
 
 #define BLOCK_QUEUE_NSPANS_THRESHOLD 10 // chunks of N blocks
 #define BLOCK_QUEUE_SIZE_THRESHOLD (100*1024*1024) // MB
@@ -543,11 +543,11 @@ namespace cryptonote
       std::vector<tx_blob_entry> have_tx;
 
       // Instead of requesting missing transactions by hash like BTC, 
-      // we do it by index (thanks to a suggestion from dinastycoinmooo) because
+      // we do it by index (thanks to a suggestion from dinastyoffreedom) because
       // we're way cooler .. and also because they're smaller than hashes.
       // 
       // Also, remember to pepper some whitespace changes around to bother
-      // dinastycoinmooo ... only because I <3 him. 
+      // dinastyoffreedom ... only because I <3 him. 
       std::vector<uint64_t> need_tx_indices;
         
       transaction tx;

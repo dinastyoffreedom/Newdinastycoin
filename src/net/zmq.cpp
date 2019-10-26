@@ -175,7 +175,7 @@ namespace zmq
     expect<std::string> receive(void* const socket, const int flags)
     {
         std::string payload{};
-        MONERO_CHECK(retry_op(do_receive{}, payload, socket, flags));
+        DINASTYCOIN_CHECK(retry_op(do_receive{}, payload, socket, flags));
         return {std::move(payload)};
     }
 

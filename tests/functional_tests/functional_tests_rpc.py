@@ -34,7 +34,7 @@ try:
 except:
   tests = DEFAULT_TESTS
 
-N_MONERODS = 2
+N_DINASTYCOINDS = 2
 N_WALLETS = 4
 WALLET_DIRECTORY = builddir + "/functional-tests-directory"
 DIFFICULTY = 10
@@ -53,7 +53,7 @@ processes = []
 outputs = []
 ports = []
 
-for i in range(N_MONERODS):
+for i in range(N_DINASTYCOINDS):
   command_lines.append([str(18180+i) if x == "dinastycoind_rpc_port" else str(18280+i) if x == "dinastycoind_p2p_port" else str(18380+i) if x == "dinastycoind_zmq_port" else x for x in dinastycoind_base])
   if i < len(dinastycoind_extra):
     command_lines[-1] += dinastycoind_extra[i]

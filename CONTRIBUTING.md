@@ -70,7 +70,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 The "Dinastycoin Maintainer Team" is defined in this document as the following users:
 - fluffypony
-- dinastycoinmooo
+- dinastyoffreedom
 - hyc
 
 ## Goals

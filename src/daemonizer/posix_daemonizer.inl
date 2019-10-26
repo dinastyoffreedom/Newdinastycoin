@@ -100,7 +100,7 @@ namespace daemonizer
     }
     else
     {
-      //LOG_PRINT_L0("Dinastycoin '" << MONERO_RELEASE_NAME << "' (v" << MONERO_VERSION_FULL);
+      //LOG_PRINT_L0("Dinastycoin '" << DINASTYCOIN_RELEASE_NAME << "' (v" << DINASTYCOIN_VERSION_FULL);
       return executor.run_interactive(vm);
     }
   }

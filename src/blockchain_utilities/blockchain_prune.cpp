@@ -37,8 +37,8 @@
 #include "blockchain_db/lmdb/db_lmdb.h"
 #include "version.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "bcutil"
+#undef DINASTYCOIN_DEFAULT_LOG_CATEGORY
+#define DINASTYCOIN_DEFAULT_LOG_CATEGORY "bcutil"
 
 #define MDB_val_set(var, val)   MDB_val var = {sizeof(val), (void *)&val}
 
@@ -480,7 +480,7 @@ int main(int argc, char* argv[])
 
   if (command_line::get_arg(vm, command_line::arg_help))
   {
-    std::cout << "Dinastycoin '" << MONERO_RELEASE_NAME << "' (v" << MONERO_VERSION_FULL << ")" << ENDL << ENDL;
+    std::cout << "Dinastycoin '" << DINASTYCOIN_RELEASE_NAME << "' (v" << DINASTYCOIN_VERSION_FULL << ")" << ENDL << ENDL;
     std::cout << desc_options << std::endl;
     return 1;
   }

@@ -43,8 +43,8 @@ namespace hw {
 
   #ifdef WITH_DEVICE_LEDGER
 
-    #undef MONERO_DEFAULT_LOG_CATEGORY
-    #define MONERO_DEFAULT_LOG_CATEGORY "device.ledger"
+    #undef DINASTYCOIN_DEFAULT_LOG_CATEGORY
+    #define DINASTYCOIN_DEFAULT_LOG_CATEGORY "device.ledger"
 
     /* ===================================================================== */
     /* ===                           Debug                              ==== */
@@ -382,10 +382,10 @@ namespace hw {
     bool device_ledger::reset() {
       reset_buffer();
       int offset = set_command_header_noopt(INS_RESET);
-      const size_t verlen = strlen(MONERO_VERSION);
-      ASSERT_X(offset + verlen <= BUFFER_SEND_SIZE, "MONERO_VERSION is too long")
-      memmove(this->buffer_send+offset, MONERO_VERSION, verlen);
-      offset += strlen(MONERO_VERSION);
+      const size_t verlen = strlen(DINASTYCOIN_VERSION);
+      ASSERT_X(offset + verlen <= BUFFER_SEND_SIZE, "DINASTYCOIN_VERSION is too long")
+      memmove(this->buffer_send+offset, DINASTYCOIN_VERSION, verlen);
+      offset += strlen(DINASTYCOIN_VERSION);
       this->buffer_send[4] = offset-5;
       this->length_send = offset;
       this->exchange();
