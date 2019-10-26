@@ -626,10 +626,10 @@ To run in background:
 
 To run as a systemd service, copy
 [dinastycoind.service](utils/systemd/dinastycoind.service) to `/etc/systemd/system/` and
-[dinastycoind.conf](utils/conf/dinastycoind.conf) to `/etc/`. The [example
+[dinastyd.conf](utils/conf/dinastyd.conf) to `/etc/`. The [example
 service](utils/systemd/dinastycoind.service) assumes that the user `dinastycoin` exists
 and its home is the data directory specified in the [example
-config](utils/conf/dinastycoind.conf).
+config](utils/conf/dinastyd.conf).
 
 If you're on Mac, you may need to add the `--max-concurrency 1` option to
 dinastycoin-wallet-cli, and possibly dinastycoind, if you get crashes refreshing.
@@ -650,8 +650,8 @@ While Dinastycoin isn't made to integrate with Tor, it can be used wrapped with 
 setting the following configuration parameters and environment variables:
 
 * `--p2p-bind-ip 127.0.0.1` on the command line or `p2p-bind-ip=127.0.0.1` in
-  dinastycoind.conf to disable listening for connections on external interfaces.
-* `--no-igd` on the command line or `no-igd=1` in dinastycoind.conf to disable IGD
+  dinastyd.conf to disable listening for connections on external interfaces.
+* `--no-igd` on the command line or `no-igd=1` in dinastyd.conf to disable IGD
   (UPnP port forwarding negotiation), which is pointless with Tor.
 * `DNS_PUBLIC=tcp` or `DNS_PUBLIC=tcp://x.x.x.x` where x.x.x.x is the IP of the
   desired DNS server, for DNS requests to go over TCP, so that they are routed

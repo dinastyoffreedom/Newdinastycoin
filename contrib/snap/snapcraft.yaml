@@ -12,7 +12,7 @@ apps:
     dinastycoind:
         daemon: forking
         command: |
-          dinastycoind-wrapper --detach --data-dir ${SNAP_COMMON} --config-file ${SNAP_USER_DATA}/etc/dinastycoind.conf
+          dinastycoind-wrapper --detach --data-dir ${SNAP_COMMON} --config-file ${SNAP_USER_DATA}/etc/dinastyd.conf
         plugs:
             - network
             - network-bind
@@ -71,7 +71,7 @@ parts:
         plugin: dump
         source: .
         organize:
-            contrib/snap/dinastycoind.conf: etc/dinastycoind.conf
+            contrib/snap/dinastyd.conf: etc/dinastyd.conf
             contrib/snap/dinastycoind-wrapper: bin/dinastycoind-wrapper
         prime:
             - etc

@@ -1097,7 +1097,7 @@ namespace Language
       "mokadi",
       "molaro",
       "momento",
-      "dinastycoin",
+      "monero",
       "mopso",
       "mordi",
       "moskito",
