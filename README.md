@@ -29,11 +29,11 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Development resources
 
-- Web: [getmonero.org](https://getmonero.org)
-- Forum: [forum.getmonero.org](https://forum.getmonero.org)
-- Mail: [dev@getmonero.org](mailto:dev@getmonero.org)
+- Web: [getdinastycoin.org](https://getdinastycoin.org)
+- Forum: [forum.getdinastycoin.org](https://forum.getdinastycoin.org)
+- Mail: [dev@getdinastycoin.org](mailto:dev@getdinastycoin.org)
 - GitHub: [https://github.com/dinastycoin-project/dinastycoin](https://github.com/dinastycoin-project/dinastycoin)
-- IRC: [#dinastycoin-dev on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23monero-dev&prompt=1&uio=d4)
+- IRC: [#dinastycoin-dev on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23dinastycoin-dev&prompt=1&uio=d4)
 
 ## Vulnerability response
 
@@ -42,19 +42,19 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Research
 
-The [Monero Research Lab](https://src.getmonero.org/resources/research-lab/) is an open forum where the community coordinates research into Monero cryptography, protocols, fungibility, analysis, and more. We welcome collaboration and contributions from outside researchers! Because not all Lab work and publications are distributed as traditional preprints or articles, they may be easy to miss if you are conducting literature reviews for your own Monero research. You are encouraged to get in touch with our researchers if you have questions, wish to collaborate, or would like guidance to help avoid unnecessarily duplicating earlier or known work.
+The [Monero Research Lab](https://src.getdinastycoin.org/resources/research-lab/) is an open forum where the community coordinates research into Monero cryptography, protocols, fungibility, analysis, and more. We welcome collaboration and contributions from outside researchers! Because not all Lab work and publications are distributed as traditional preprints or articles, they may be easy to miss if you are conducting literature reviews for your own Monero research. You are encouraged to get in touch with our researchers if you have questions, wish to collaborate, or would like guidance to help avoid unnecessarily duplicating earlier or known work.
 
-Our researchers are available on IRC in [#dinastycoin-research-lab on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23monero-research-lab&prompt=1&uio=d4) or by email:
+Our researchers are available on IRC in [#dinastycoin-research-lab on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23dinastycoin-research-lab&prompt=1&uio=d4) or by email:
 
-- Sarang Noether, Ph.D.: [sarang@getmonero.org](mailto:sarang@getmonero.org) or [sarang.noether@protonmail.com](mailto:sarang.noether@protonmail.com); [research repository](https://github.com/SarangNoether/research-lab)
-- Surae Noether (Brandon Goodell), Ph.D.: [surae@getmonero.org](mailto:surae@getmonero.org) or [surae.noether@protonmail.com](mailto:surae.noether@protonmail.com); [research repository](https://github.com/b-g-goodell/research-lab)
+- Sarang Noether, Ph.D.: [sarang@getdinastycoin.org](mailto:sarang@getdinastycoin.org) or [sarang.noether@protonmail.com](mailto:sarang.noether@protonmail.com); [research repository](https://github.com/SarangNoether/research-lab)
+- Surae Noether (Brandon Goodell), Ph.D.: [surae@getdinastycoin.org](mailto:surae@getdinastycoin.org) or [surae.noether@protonmail.com](mailto:surae.noether@protonmail.com); [research repository](https://github.com/b-g-goodell/research-lab)
 
 ## Announcements
 
-- You can subscribe to an [announcement listserv](https://lists.getmonero.org) to get critical announcements from the Monero core team. The announcement list can be very helpful for knowing when software updates are needed.
+- You can subscribe to an [announcement listserv](https://lists.getdinastycoin.org) to get critical announcements from the Monero core team. The announcement list can be very helpful for knowing when software updates are needed.
 
 ## Translations
-The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Weblate, on [translate.getmonero.org](https://translate.getmonero.org/projects/CLI/). Every translation *must* be uploaded on the platform, pull requests directly editing the code in this repository will be closed. If you need help with Weblate, you can find a guide with screenshots [here](https://github.com/dinastycoin-ecosystem/dinastycoin-translations/blob/master/weblate.md).
+The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Weblate, on [translate.getdinastycoin.org](https://translate.getdinastycoin.org/projects/CLI/). Every translation *must* be uploaded on the platform, pull requests directly editing the code in this repository will be closed. If you need help with Weblate, you can find a guide with screenshots [here](https://github.com/dinastycoin-ecosystem/dinastycoin-translations/blob/master/weblate.md).
 &nbsp;
 
 If you need help/support/info about translations, contact the localization workgroup. You can find the complete list of contacts on the repository of the workgroup: [dinastycoin-translations](https://github.com/dinastycoin-ecosystem/dinastycoin-translations#contacts).
@@ -67,17 +67,17 @@ These builds are of the master branch, which is used for active development and 
 
 | Operating System      | Processor | Status |
 | --------------------- | -------- |--------|
-| Ubuntu 16.04          |  i686    | [![Ubuntu 16.04 i686](https://build.getmonero.org/png?builder=dinastycoin-static-ubuntu-i686)](https://build.getmonero.org/builders/dinastycoin-static-ubuntu-i686)
-| Ubuntu 16.04          |  amd64   | [![Ubuntu 16.04 amd64](https://build.getmonero.org/png?builder=dinastycoin-static-ubuntu-amd64)](https://build.getmonero.org/builders/dinastycoin-static-ubuntu-amd64)
-| Ubuntu 16.04          |  armv7   | [![Ubuntu 16.04 armv7](https://build.getmonero.org/png?builder=dinastycoin-static-ubuntu-arm7)](https://build.getmonero.org/builders/dinastycoin-static-ubuntu-arm7)
-| Debian Stable         |  armv8   | [![Debian armv8](https://build.getmonero.org/png?builder=dinastycoin-static-debian-armv8)](https://build.getmonero.org/builders/dinastycoin-static-debian-armv8)
-| macOS 10.11             |  amd64   | [![macOS 10.11 amd64](https://build.getmonero.org/png?builder=dinastycoin-static-osx-10.11)](https://build.getmonero.org/builders/dinastycoin-static-osx-10.11)
-| macOS 10.12             |  amd64   | [![macOS 10.12 amd64](https://build.getmonero.org/png?builder=dinastycoin-static-osx-10.12)](https://build.getmonero.org/builders/dinastycoin-static-osx-10.12)
-| macOS 10.13             |  amd64   | [![macOS 10.13 amd64](https://build.getmonero.org/png?builder=dinastycoin-static-osx-10.13)](https://build.getmonero.org/builders/dinastycoin-static-osx-10.13)
-| FreeBSD 11            |  amd64   | [![FreeBSD 11 amd64](https://build.getmonero.org/png?builder=dinastycoin-static-freebsd64)](https://build.getmonero.org/builders/dinastycoin-static-freebsd64)
-| DragonFly BSD 4.6     |  amd64   | [![DragonFly BSD amd64](https://build.getmonero.org/png?builder=dinastycoin-static-dragonflybsd-amd64)](https://build.getmonero.org/builders/dinastycoin-static-dragonflybsd-amd64)
-| Windows (MSYS2/MinGW) |  i686    | [![Windows (MSYS2/MinGW) i686](https://build.getmonero.org/png?builder=dinastycoin-static-win32)](https://build.getmonero.org/builders/dinastycoin-static-win32)
-| Windows (MSYS2/MinGW) |  amd64   | [![Windows (MSYS2/MinGW) amd64](https://build.getmonero.org/png?builder=dinastycoin-static-win64)](https://build.getmonero.org/builders/dinastycoin-static-win64)
+| Ubuntu 16.04          |  i686    | [![Ubuntu 16.04 i686](https://build.getdinastycoin.org/png?builder=dinastycoin-static-ubuntu-i686)](https://build.getdinastycoin.org/builders/dinastycoin-static-ubuntu-i686)
+| Ubuntu 16.04          |  amd64   | [![Ubuntu 16.04 amd64](https://build.getdinastycoin.org/png?builder=dinastycoin-static-ubuntu-amd64)](https://build.getdinastycoin.org/builders/dinastycoin-static-ubuntu-amd64)
+| Ubuntu 16.04          |  armv7   | [![Ubuntu 16.04 armv7](https://build.getdinastycoin.org/png?builder=dinastycoin-static-ubuntu-arm7)](https://build.getdinastycoin.org/builders/dinastycoin-static-ubuntu-arm7)
+| Debian Stable         |  armv8   | [![Debian armv8](https://build.getdinastycoin.org/png?builder=dinastycoin-static-debian-armv8)](https://build.getdinastycoin.org/builders/dinastycoin-static-debian-armv8)
+| macOS 10.11             |  amd64   | [![macOS 10.11 amd64](https://build.getdinastycoin.org/png?builder=dinastycoin-static-osx-10.11)](https://build.getdinastycoin.org/builders/dinastycoin-static-osx-10.11)
+| macOS 10.12             |  amd64   | [![macOS 10.12 amd64](https://build.getdinastycoin.org/png?builder=dinastycoin-static-osx-10.12)](https://build.getdinastycoin.org/builders/dinastycoin-static-osx-10.12)
+| macOS 10.13             |  amd64   | [![macOS 10.13 amd64](https://build.getdinastycoin.org/png?builder=dinastycoin-static-osx-10.13)](https://build.getdinastycoin.org/builders/dinastycoin-static-osx-10.13)
+| FreeBSD 11            |  amd64   | [![FreeBSD 11 amd64](https://build.getdinastycoin.org/png?builder=dinastycoin-static-freebsd64)](https://build.getdinastycoin.org/builders/dinastycoin-static-freebsd64)
+| DragonFly BSD 4.6     |  amd64   | [![DragonFly BSD amd64](https://build.getdinastycoin.org/png?builder=dinastycoin-static-dragonflybsd-amd64)](https://build.getdinastycoin.org/builders/dinastycoin-static-dragonflybsd-amd64)
+| Windows (MSYS2/MinGW) |  i686    | [![Windows (MSYS2/MinGW) i686](https://build.getdinastycoin.org/png?builder=dinastycoin-static-win32)](https://build.getdinastycoin.org/builders/dinastycoin-static-win32)
+| Windows (MSYS2/MinGW) |  amd64   | [![Windows (MSYS2/MinGW) amd64](https://build.getdinastycoin.org/png?builder=dinastycoin-static-win64)](https://build.getdinastycoin.org/builders/dinastycoin-static-win64)
 
 ## Coverage
 
@@ -109,7 +109,7 @@ As with many development projects, the repository on Github is considered to be 
 
 ## Supporting the project
 
-Monero is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Monero and Bitcoin donations can be made to **donate.getmonero.org** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send XMR to the Monero donation address via the `donate` command (type `help` in the command-line wallet for details).
+Monero is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Monero and Bitcoin donations can be made to **donate.getdinastycoin.org** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send XMR to the Monero donation address via the `donate` command (type `help` in the command-line wallet for details).
 
 The Monero donation address is: `44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A` (viewkey: `f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501`)
 
@@ -117,13 +117,13 @@ The Bitcoin donation address is: `1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H`
 
 Core development funding and/or some supporting services are also graciously provided by sponsors:
 
-[<img width="80" src="https://static.getmonero.org/images/sponsors/mymonero.png"/>](https://mymonero.com)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/kitware.png?1"/>](https://kitware.com)
-[<img width="100" src="https://static.getmonero.org/images/sponsors/dome9.png"/>](https://dome9.com)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/araxis.png"/>](https://araxis.com)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/jetbrains.png"/>](https://www.jetbrains.com/)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/navicat.png"/>](https://www.navicat.com/)
-[<img width="150" src="https://static.getmonero.org/images/sponsors/symas.png"/>](https://www.symas.com/)
+[<img width="80" src="https://static.getdinastycoin.org/images/sponsors/mydinastycoin.png"/>](https://mydinastycoin.com)
+[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/kitware.png?1"/>](https://kitware.com)
+[<img width="100" src="https://static.getdinastycoin.org/images/sponsors/dome9.png"/>](https://dome9.com)
+[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/araxis.png"/>](https://araxis.com)
+[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/jetbrains.png"/>](https://www.jetbrains.com/)
+[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/navicat.png"/>](https://www.navicat.com/)
+[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/symas.png"/>](https://www.symas.com/)
 
 There are also several mining pools that kindly donate a portion of their fees, [a list of them can be found on our Bitcointalk post](https://bitcointalk.org/index.php?topic=583449.0).
 
@@ -259,7 +259,7 @@ invokes cmake commands as needed.
 
 * Add `PATH="$PATH:$HOME/dinastycoin/build/release/bin"` to `.profile`
 
-* Run Monero with `monerod --detach`
+* Run Monero with `dinastycoind --detach`
 
 * **Optional**: build and run the test suite to verify the binaries:
 
@@ -328,7 +328,7 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 
 * Add `PATH="$PATH:$HOME/dinastycoin/build/release/bin"` to `.profile`
 
-* Run Monero with `monerod --detach`
+* Run Monero with `dinastycoind --detach`
 
 * You may wish to reduce the size of the swap file after the build has finished, and delete the boost directory from your home directory
 
@@ -591,10 +591,10 @@ More info and versions in the [Debian package tracker](https://tracker.debian.or
     docker build --build-arg NPROC=1 -t dinastycoin .
     
     # either run in foreground
-    docker run -it -v /dinastycoin/chain:/root/.bitmonero -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
+    docker run -it -v /dinastycoin/chain:/root/.bitdinastycoin -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
     
     # or in background
-    docker run -it -d -v /dinastycoin/chain:/root/.bitmonero -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
+    docker run -it -d -v /dinastycoin/chain:/root/.bitdinastycoin -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
     ```
 
 * The build needs 3 GB space.
@@ -602,17 +602,17 @@ More info and versions in the [Debian package tracker](https://tracker.debian.or
 
 Packaging for your favorite distribution would be a welcome contribution!
 
-## Running monerod
+## Running dinastycoind
 
 The build places the binary in `bin/` sub-directory within the build directory
 from which cmake was invoked (repository root by default). To run in
 foreground:
 
 ```bash
-./bin/monerod
+./bin/dinastycoind
 ```
 
-To list all available options, run `./bin/monerod --help`.  Options can be
+To list all available options, run `./bin/dinastycoind --help`.  Options can be
 specified either on the command line or in a configuration file passed by the
 `--config-file` argument.  To specify an option in the configuration file, add
 a line with the syntax `argumentname=value`, where `argumentname` is the name
@@ -621,18 +621,18 @@ of the argument without the leading dashes, for example `log-level=1`.
 To run in background:
 
 ```bash
-./bin/monerod --log-file monerod.log --detach
+./bin/dinastycoind --log-file dinastycoind.log --detach
 ```
 
 To run as a systemd service, copy
-[monerod.service](utils/systemd/monerod.service) to `/etc/systemd/system/` and
-[monerod.conf](utils/conf/monerod.conf) to `/etc/`. The [example
-service](utils/systemd/monerod.service) assumes that the user `dinastycoin` exists
+[dinastycoind.service](utils/systemd/dinastycoind.service) to `/etc/systemd/system/` and
+[dinastycoind.conf](utils/conf/dinastycoind.conf) to `/etc/`. The [example
+service](utils/systemd/dinastycoind.service) assumes that the user `dinastycoin` exists
 and its home is the data directory specified in the [example
-config](utils/conf/monerod.conf).
+config](utils/conf/dinastycoind.conf).
 
 If you're on Mac, you may need to add the `--max-concurrency 1` option to
-dinastycoin-wallet-cli, and possibly monerod, if you get crashes refreshing.
+dinastycoin-wallet-cli, and possibly dinastycoind, if you get crashes refreshing.
 
 ## Internationalization
 
@@ -650,28 +650,28 @@ While Monero isn't made to integrate with Tor, it can be used wrapped with torso
 setting the following configuration parameters and environment variables:
 
 * `--p2p-bind-ip 127.0.0.1` on the command line or `p2p-bind-ip=127.0.0.1` in
-  monerod.conf to disable listening for connections on external interfaces.
-* `--no-igd` on the command line or `no-igd=1` in monerod.conf to disable IGD
+  dinastycoind.conf to disable listening for connections on external interfaces.
+* `--no-igd` on the command line or `no-igd=1` in dinastycoind.conf to disable IGD
   (UPnP port forwarding negotiation), which is pointless with Tor.
 * `DNS_PUBLIC=tcp` or `DNS_PUBLIC=tcp://x.x.x.x` where x.x.x.x is the IP of the
   desired DNS server, for DNS requests to go over TCP, so that they are routed
-  through Tor. When IP is not specified, monerod uses the default list of
+  through Tor. When IP is not specified, dinastycoind uses the default list of
   servers defined in [src/common/dns_utils.cpp](src/common/dns_utils.cpp).
-* `TORSOCKS_ALLOW_INBOUND=1` to tell torsocks to allow monerod to bind to interfaces
+* `TORSOCKS_ALLOW_INBOUND=1` to tell torsocks to allow dinastycoind to bind to interfaces
    to accept connections from the wallet. On some Linux systems, torsocks
    allows binding to localhost by default, so setting this variable is only
    necessary to allow binding to local LAN/VPN interfaces to allow wallets to
    connect from remote hosts. On other systems, it may be needed for local wallets
    as well.
 * Do NOT pass `--detach` when running through torsocks with systemd, (see
-  [utils/systemd/monerod.service](utils/systemd/monerod.service) for details).
+  [utils/systemd/dinastycoind.service](utils/systemd/dinastycoind.service) for details).
 * If you use the wallet with a Tor daemon via the loopback IP (eg, 127.0.0.1:9050),
   then use `--untrusted-daemon` unless it is your own hidden service.
 
-Example command line to start monerod through Tor:
+Example command line to start dinastycoind through Tor:
 
 ```bash
-DNS_PUBLIC=tcp torsocks monerod --p2p-bind-ip 127.0.0.1 --no-igd
+DNS_PUBLIC=tcp torsocks dinastycoind --p2p-bind-ip 127.0.0.1 --no-igd
 ```
 
 ### Using Tor on Tails
@@ -682,7 +682,7 @@ allow inbound connections. Full example:
 
 ```bash
 sudo iptables -I OUTPUT 2 -p tcp -d 127.0.0.1 -m tcp --dport 18081 -j ACCEPT
-DNS_PUBLIC=tcp torsocks ./monerod --p2p-bind-ip 127.0.0.1 --no-igd --rpc-bind-ip 127.0.0.1 \
+DNS_PUBLIC=tcp torsocks ./dinastycoind --p2p-bind-ip 127.0.0.1 --no-igd --rpc-bind-ip 127.0.0.1 \
     --data-dir /home/amnesia/Persistent/your/directory/to/the/blockchain
 ```
 
@@ -701,7 +701,7 @@ Run the build.
 Once it stalls, enter the following command:
 
 ```bash
-gdb /path/to/monerod `pidof monerod`
+gdb /path/to/dinastycoind `pidof dinastycoind`
 ```
 
 Type `thread apply all bt` within gdb in order to obtain the stack trace
@@ -714,12 +714,12 @@ Enter `echo core | sudo tee /proc/sys/kernel/core_pattern` to stop cores from be
 
 Run the build.
 
-When it terminates with an output along the lines of "Segmentation fault (core dumped)", there should be a core dump file in the same directory as monerod. It may be named just `core`, or `core.xxxx` with numbers appended.
+When it terminates with an output along the lines of "Segmentation fault (core dumped)", there should be a core dump file in the same directory as dinastycoind. It may be named just `core`, or `core.xxxx` with numbers appended.
 
 You can now analyse this core dump with `gdb` as follows:
 
 ```bash
-gdb /path/to/monerod /path/to/dumpfile`
+gdb /path/to/dinastycoind /path/to/dumpfile`
 ```
 
 Print the stack trace with `bt`
@@ -732,11 +732,11 @@ coredumpctl -1 gdb
 
 #### To run dinastycoin within gdb:
 
-Type `gdb /path/to/monerod`
+Type `gdb /path/to/dinastycoind`
 
 Pass command-line options with `--args` followed by the relevant arguments
 
-Type `run` to run monerod
+Type `run` to run dinastycoind
 
 ### Analysing memory corruption
 
@@ -754,7 +754,7 @@ You can then run the dinastycoin tools normally. Performance will typically halv
 
 #### valgrind
 
-Install valgrind and run as `valgrind /path/to/monerod`. It will be very slow.
+Install valgrind and run as `valgrind /path/to/dinastycoind`. It will be very slow.
 
 ### LMDB
 
@@ -780,8 +780,8 @@ These records are dumped as hex data, where the first line is the key and the se
 
 Because of the nature of the socket-based protocols that drive dinastycoin, certain protocol weaknesses are somewhat unavoidable at this time. While these weaknesses can theoretically be fully mitigated, the effort required (the means) may not justify the ends. As such, please consider taking the following precautions if you are a dinastycoin node operator:
 
-- Run `monerod` on a "secured" machine. If operational security is not your forte, at a very minimum, have a dedicated a computer running `monerod` and **do not** browse the web, use email clients, or use any other potentially harmful apps on your `monerod` machine. **Do not click links or load URL/MUA content on the same machine**. Doing so may potentially exploit weaknesses in commands which accept "localhost" and "127.0.0.1".
-- If you plan on hosting a public "remote" node, start `monerod` with `--restricted-rpc`. This is a must.
+- Run `dinastycoind` on a "secured" machine. If operational security is not your forte, at a very minimum, have a dedicated a computer running `dinastycoind` and **do not** browse the web, use email clients, or use any other potentially harmful apps on your `dinastycoind` machine. **Do not click links or load URL/MUA content on the same machine**. Doing so may potentially exploit weaknesses in commands which accept "localhost" and "127.0.0.1".
+- If you plan on hosting a public "remote" node, start `dinastycoind` with `--restricted-rpc`. This is a must.
 
 ### Blockchain-based
 

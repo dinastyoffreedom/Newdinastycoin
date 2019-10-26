@@ -1038,8 +1038,8 @@
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7073"/>
-        <source>Donating %s %s to The Monero Project (donate.getmonero.org or %s).</source>
-        <translation>Donare %s %s a The Monero Project (donate.getmonero.org o %s).</translation>
+        <source>Donating %s %s to The Monero Project (donate.getdinastycoin.org or %s).</source>
+        <translation>Donare %s %s a The Monero Project (donate.getdinastycoin.org o %s).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7075"/>
@@ -1624,8 +1624,8 @@ Amount, Spent(&quot;T&quot;|&quot;F&quot;), &quot;frozen&quot;|&quot;locked&quot
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2910"/>
-        <source>Donate &lt;amount&gt; to the development team (donate.getmonero.org).</source>
-        <translation>Dona &lt;amount&gt; al team di sviluppo (donate.getmonero.org).</translation>
+        <source>Donate &lt;amount&gt; to the development team (donate.getdinastycoin.org).</source>
+        <translation>Dona &lt;amount&gt; al team di sviluppo (donate.getdinastycoin.org).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2917"/>
@@ -4034,8 +4034,8 @@ Input %llu/%llu (%s): amount=%s</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10129"/>
-        <source>mms signer [&lt;number&gt; &lt;label&gt; [&lt;transport_address&gt; [&lt;monero_address&gt;]]]</source>
-        <translation>mms signer [&lt;number&gt; &lt;label&gt; [&lt;transport_address&gt; [&lt;monero_address&gt;]]]</translation>
+        <source>mms signer [&lt;number&gt; &lt;label&gt; [&lt;transport_address&gt; [&lt;dinastycoin_address&gt;]]]</source>
+        <translation>mms signer [&lt;number&gt; &lt;label&gt; [&lt;transport_address&gt; [&lt;dinastycoin_address&gt;]]]</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10148"/>

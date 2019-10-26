@@ -59,10 +59,10 @@ endif()
 set(device_private_headers)
 
 
-monero_private_headers(device
+dinastycoin_private_headers(device
   ${device_private_headers})
 
-monero_add_library(device
+dinastycoin_add_library(device
   ${device_sources}
   ${device_headers}
   ${device_private_headers})

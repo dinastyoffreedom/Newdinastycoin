@@ -70,7 +70,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 The "Monero Maintainer Team" is defined in this document as the following users:
 - fluffypony
-- moneromooo
+- dinastycoinmooo
 - hyc
 
 ## Goals

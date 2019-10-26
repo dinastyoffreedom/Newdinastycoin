@@ -53,9 +53,9 @@ set(wallet_private_headers
   message_transporter.h
   wallet_rpc_helpers.h)
 
-monero_private_headers(wallet
+dinastycoin_private_headers(wallet
   ${wallet_private_headers})
-monero_add_library(wallet
+dinastycoin_add_library(wallet
   ${wallet_sources}
   ${wallet_private_headers})
 target_link_libraries(wallet
@@ -85,9 +85,9 @@ set(wallet_rpc_headers)
 set(wallet_rpc_private_headers
   wallet_rpc_server.h)
 
-monero_private_headers(wallet_rpc_server
+dinastycoin_private_headers(wallet_rpc_server
   ${wallet_rpc_private_headers})
-monero_add_executable(wallet_rpc_server
+dinastycoin_add_executable(wallet_rpc_server
   ${wallet_rpc_sources}
   ${wallet_rpc_headers}
   ${wallet_rpc_private_headers})

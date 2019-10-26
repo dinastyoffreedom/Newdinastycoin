@@ -101,4 +101,4 @@ private:
 
 } // namespace
 
-namespace Bitmonero = Monero;
+namespace Bitdinastycoin = Monero;

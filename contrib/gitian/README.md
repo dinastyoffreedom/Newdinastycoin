@@ -173,7 +173,7 @@ Take a look in the assert files and note the SHA256 checksums listed there. eg f
 2b95118f53d98d542a85f8732b84ba13b3cd20517ccb40332b0edd0ddf4f8c62  dinastycoin-x86_64-linux-gnu.tar.gz
 ```
 
-You should verify that this is really the checksum you get on that file you built.  You can also look in the gitian.sigs repo and / or [getmonero.org release checksums](https://web.getmonero.org/downloads/hashes.txt) to see if others got the same checksum for the same version tag.  If there is ever a mismatch -- **STOP! Something is wrong**.  Contact others on IRC / github to figure out what is going on.
+You should verify that this is really the checksum you get on that file you built.  You can also look in the gitian.sigs repo and / or [getdinastycoin.org release checksums](https://web.getdinastycoin.org/downloads/hashes.txt) to see if others got the same checksum for the same version tag.  If there is ever a mismatch -- **STOP! Something is wrong**.  Contact others on IRC / github to figure out what is going on.
 
 
 Signing assert files
@@ -215,7 +215,7 @@ More Build Options
 
 You can choose your own remote and commit hash by running for example:
 ```bash
-./gitian-build.py --detach-sign --no-commit --url https://github.com/moneromooo-dinastycoin/bitmonero -b moneromooo 1f5680c8db8f4cc7acc04a04c724b832003440fd
+./gitian-build.py --detach-sign --no-commit --url https://github.com/dinastycoinmooo-dinastycoin/bitdinastycoin -b dinastycoinmooo 1f5680c8db8f4cc7acc04a04c724b832003440fd
 ```
 
 Note that you won't be able to build commits authored before the gitian scripts

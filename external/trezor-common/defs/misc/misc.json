@@ -34,7 +34,7 @@
         "curve": "ed25519",
         "decimals": 12,
         "links": {
-            "Homepage": "https://getmonero.org",
+            "Homepage": "https://getdinastycoin.org",
             "Github": "https://github.com/dinastycoin-project/dinastycoin"
         },
         "wallet": {},

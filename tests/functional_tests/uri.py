@@ -43,7 +43,7 @@ from framework.wallet import Wallet
 class URITest():
     def run_test(self):
       self.create()
-      self.test_monero_uri()
+      self.test_dinastycoin_uri()
 
     def create(self):
         print('Creating wallet')
@@ -56,7 +56,7 @@ class URITest():
         assert res.address == '42ey1afDFnn4886T7196doS9GPMzexD9gXpsZJDwVjeRVdFCSoHnv7KPbBeGpzJBzHRCAs9UxqeoyFQMYbqSWYTfJJQAWDm'
         assert res.seed == seed
 
-    def test_monero_uri(self):
+    def test_dinastycoin_uri(self):
         print('Testing dinastycoin: URI')
         wallet = Wallet()
 
@@ -177,7 +177,7 @@ class URITest():
             '',
             ':',
             'dinastycoin',
-            'notmonero:42ey1afDFnn4886T7196doS9GPMzexD9gXpsZJDwVjeRVdFCSoHnv7KPbBeGpzJBzHRCAs9UxqeoyFQMYbqSWYTfJJQAWDm',
+            'notdinastycoin:42ey1afDFnn4886T7196doS9GPMzexD9gXpsZJDwVjeRVdFCSoHnv7KPbBeGpzJBzHRCAs9UxqeoyFQMYbqSWYTfJJQAWDm',
             'MONERO:42ey1afDFnn4886T7196doS9GPMzexD9gXpsZJDwVjeRVdFCSoHnv7KPbBeGpzJBzHRCAs9UxqeoyFQMYbqSWYTfJJQAWDm',
             'MONERO::42ey1afDFnn4886T7196doS9GPMzexD9gXpsZJDwVjeRVdFCSoHnv7KPbBeGpzJBzHRCAs9UxqeoyFQMYbqSWYTfJJQAWDm',
             'dinastycoin:',

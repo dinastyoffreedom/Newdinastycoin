@@ -1737,8 +1737,8 @@ Transaction </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10129"/>
-        <source>mms signer [&lt;number&gt; &lt;label&gt; [&lt;transport_address&gt; [&lt;monero_address&gt;]]]</source>
-        <translation>mms signer [&lt;nombre&gt; &lt;étiquette&gt; [&lt;adresse_de_transport&gt; [&lt;adresse_monero&gt;]]]</translation>
+        <source>mms signer [&lt;number&gt; &lt;label&gt; [&lt;transport_address&gt; [&lt;dinastycoin_address&gt;]]]</source>
+        <translation>mms signer [&lt;nombre&gt; &lt;étiquette&gt; [&lt;adresse_de_transport&gt; [&lt;adresse_dinastycoin&gt;]]]</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10148"/>
@@ -2554,8 +2554,8 @@ Amount, Spent(&quot;T&quot;|&quot;F&quot;), &quot;frozen&quot;|&quot;locked&quot
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2910"/>
-        <source>Donate &lt;amount&gt; to the development team (donate.getmonero.org).</source>
-        <translation>Donner &lt;montant&gt; à l&apos;équipe de développement (donate.getmonero.org).</translation>
+        <source>Donate &lt;amount&gt; to the development team (donate.getdinastycoin.org).</source>
+        <translation>Donner &lt;montant&gt; à l&apos;équipe de développement (donate.getdinastycoin.org).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2917"/>
@@ -4298,8 +4298,8 @@ Entrée %llu/%llu (%s): montant=%s</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7073"/>
-        <source>Donating %s %s to The Monero Project (donate.getmonero.org or %s).</source>
-        <translation>Don de %s %s à The Monero Project (donate.getmonero.org ou %s).</translation>
+        <source>Donating %s %s to The Monero Project (donate.getdinastycoin.org or %s).</source>
+        <translation>Don de %s %s à The Monero Project (donate.getdinastycoin.org ou %s).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7407"/>
@@ -5871,12 +5871,12 @@ ATTENTION : Ne réutilisez pas vos clés Monero avec un autre fork, À MOINS QUE
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="1723"/>
         <source>Password is needed to compute key image for incoming dinastycoin</source>
-        <translation>Le mot de passe est requis pour calculer l&apos;image de clé pour les moneros entrants</translation>
+        <translation>Le mot de passe est requis pour calculer l&apos;image de clé pour les dinastycoins entrants</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="1724"/>
         <source>Invalid password: password is needed to compute key image for incoming dinastycoin</source>
-        <translation>Mot de passe invalide : le mot de passe est requis pour calculer l&apos;image de clé pour les moneros entrants</translation>
+        <translation>Mot de passe invalide : le mot de passe est requis pour calculer l&apos;image de clé pour les dinastycoins entrants</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="4263"/>

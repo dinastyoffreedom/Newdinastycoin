@@ -224,12 +224,12 @@ void mlog_configure(const std::string &filename_base, bool console, const std::s
     }
   });
   mlog_set_common_prefix();
-  const char *monero_log = getenv("MONERO_LOGS");
-  if (!monero_log)
+  const char *dinastycoin_log = getenv("MONERO_LOGS");
+  if (!dinastycoin_log)
   {
-    monero_log = get_default_categories(0);
+    dinastycoin_log = get_default_categories(0);
   }
-  mlog_set_log(monero_log);
+  mlog_set_log(dinastycoin_log);
 #ifdef WIN32
   EnableVTMode();
 #endif
