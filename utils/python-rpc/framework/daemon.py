@@ -35,7 +35,7 @@ class Daemon(object):
     def __init__(self, protocol='http', host='127.0.0.1', port=0, idx=0):
         self.host = host
         self.port = port
-        self.rpc = JSONRPC('{protocol}://{host}:{port}'.format(protocol=protocol, host=host, port=port if port else 18180+idx))
+        self.rpc = JSONRPC('{protocol}://{host}:{port}'.format(protocol=protocol, host=host, port=port if port else 37175+idx))
 
     def getblocktemplate(self, address, prev_block = "", client = ""):
         getblocktemplate = {

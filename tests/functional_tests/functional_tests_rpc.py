@@ -44,7 +44,7 @@ dinastycoind_extra = [
   [],
   ["--rpc-payment-address", "44SKxxLQw929wRF6BA9paQ1EWFshNnKhXM3qz6Mo3JGDE2YG3xyzVutMStEicxbQGRfrYvAAYxH6Fe8rnD56EaNwUiqhcwR", "--rpc-payment-difficulty", str(DIFFICULTY), "--rpc-payment-credits", "5000", "--data-dir", builddir + "/functional-tests-directory/dinastycoind1"],
 ]
-wallet_base = [builddir + "/bin/dinasty-wallet-rpc", "--wallet-dir", WALLET_DIRECTORY, "--rpc-bind-port", "wallet_port", "--disable-rpc-login", "--rpc-ssl", "disabled", "--daemon-ssl", "disabled", "--daemon-port", "18180", "--log-level", "1"]
+wallet_base = [builddir + "/bin/dinasty-wallet-rpc", "--wallet-dir", WALLET_DIRECTORY, "--rpc-bind-port", "wallet_port", "--disable-rpc-login", "--rpc-ssl", "disabled", "--daemon-ssl", "disabled", "--daemon-port", "37175", "--log-level", "1"]
 wallet_extra = [
 ]
 
@@ -54,11 +54,11 @@ outputs = []
 ports = []
 
 for i in range(N_DINASTYCOINDS):
-  command_lines.append([str(18180+i) if x == "dinastycoind_rpc_port" else str(18280+i) if x == "dinastycoind_p2p_port" else str(18380+i) if x == "dinastycoind_zmq_port" else x for x in dinastycoind_base])
+  command_lines.append([str(37175+i) if x == "dinastycoind_rpc_port" else str(18280+i) if x == "dinastycoind_p2p_port" else str(18380+i) if x == "dinastycoind_zmq_port" else x for x in dinastycoind_base])
   if i < len(dinastycoind_extra):
     command_lines[-1] += dinastycoind_extra[i]
   outputs.append(open(builddir + '/tests/functional_tests/dinastycoind' + str(i) + '.log', 'a+'))
-  ports.append(18180+i)
+  ports.append(37175+i)
 
 for i in range(N_WALLETS):
   command_lines.append([str(18090+i) if x == "wallet_port" else x for x in wallet_base])
