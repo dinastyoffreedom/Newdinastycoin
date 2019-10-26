@@ -68,7 +68,7 @@
 namespace
 {
     static constexpr const char v2_onion[] =
-        "xmrto2bturnore26.onion";
+        "dcyto2bturnore26.onion";
     static constexpr const char v3_onion[] =
         "vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion";
 }

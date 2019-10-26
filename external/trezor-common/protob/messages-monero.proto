@@ -167,7 +167,7 @@ message DinastycoinTransactionSetInputRequest {
  * @next DinastycoinTransactionInputsPermutationRequest
  */
 message DinastycoinTransactionSetInputAck {
-    optional bytes vini = 1;      // xmrtypes.TxinToKey
+    optional bytes vini = 1;      // dcytypes.TxinToKey
     optional bytes vini_hmac = 2;
     optional bytes pseudo_out = 3;
     optional bytes pseudo_out_hmac = 4;
@@ -196,7 +196,7 @@ message DinastycoinTransactionInputsPermutationAck {
  */
 message DinastycoinTransactionInputViniRequest {
     optional DinastycoinTransactionSourceEntry src_entr = 1;
-    optional bytes vini = 2;      // xmrtypes.TxinToKey
+    optional bytes vini = 2;      // dcytypes.TxinToKey
     optional bytes vini_hmac = 3;
     optional bytes pseudo_out = 4;
     optional bytes pseudo_out_hmac = 5;
@@ -242,7 +242,7 @@ message DinastycoinTransactionSetOutputRequest {
  * @next DinastycoinTransactionAllOutSetRequest
  */
 message DinastycoinTransactionSetOutputAck {
-    optional bytes tx_out = 1;  // xmrtypes.TxOut
+    optional bytes tx_out = 1;  // dcytypes.TxOut
     optional bytes vouti_hmac = 2;
     optional DinastycoinTransactionRsigData rsig_data = 3;
     optional bytes out_pk = 4;
@@ -264,7 +264,7 @@ message DinastycoinTransactionAllOutSetRequest {
 message DinastycoinTransactionAllOutSetAck {
     optional bytes extra = 1;
     optional bytes tx_prefix_hash = 2;
-    optional DinastycoinRingCtSig rv = 4;  // xmrtypes.RctSig
+    optional DinastycoinRingCtSig rv = 4;  // dcytypes.RctSig
     optional bytes full_message_hash = 5;
 
     /*
@@ -283,7 +283,7 @@ message DinastycoinTransactionAllOutSetAck {
  */
 message DinastycoinTransactionSignInputRequest {
     optional DinastycoinTransactionSourceEntry src_entr = 1;
-    optional bytes vini = 2;     // xmrtypes.TxinToKey
+    optional bytes vini = 2;     // dcytypes.TxinToKey
     optional bytes vini_hmac = 3;
     optional bytes pseudo_out = 4;
     optional bytes pseudo_out_hmac = 5;

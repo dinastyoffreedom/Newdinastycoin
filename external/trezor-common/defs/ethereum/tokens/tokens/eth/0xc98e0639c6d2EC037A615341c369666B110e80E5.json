@@ -4,7 +4,7 @@
   "decimals": 8,
   "name": "eXMRcoin",
   "ens_address": "",
-  "website": "https://exmr.io/",
+  "website": "https://edcy.io/",
   "logo": {
     "src": "",
     "width": "",
@@ -12,13 +12,13 @@
     "ipfs_hash": ""
   },
   "support": {
-    "email": "support@exmr.io",
+    "email": "support@edcy.io",
     "url": ""
   },
   "social": {
     "blog": "",
     "chat": "",
-    "facebook": "https://www.facebook.com/exmrcoin/",
+    "facebook": "https://www.facebook.com/edcycoin/",
     "forum": "",
     "github": "https://github.com/eXMRcoin/",
     "gitter": "",
