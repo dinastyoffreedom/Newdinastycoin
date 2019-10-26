@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2014-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -253,7 +253,7 @@ namespace cryptonote
   {
     std::vector<std::string> records;
 
-    // All four MoneroPulse domains have DNSSEC on and valid
+    // All four DinastycoinPulse domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls = { "checkpoints.dinastycoinpulse.se"
 						     , "checkpoints.dinastycoinpulse.org"
 						     , "checkpoints.dinastycoinpulse.net"

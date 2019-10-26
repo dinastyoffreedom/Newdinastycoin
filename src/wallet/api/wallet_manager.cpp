@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2014-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -47,7 +47,7 @@ namespace epee {
     unsigned int g_test_dbg_lock_sleep = 0;
 }
 
-namespace Monero {
+namespace Dinastycoin {
 
 Wallet *WalletManagerImpl::createWallet(const std::string &path, const std::string &password,
                                     const std::string &language, NetworkType nettype, uint64_t kdf_rounds)
@@ -394,4 +394,4 @@ void WalletManagerFactory::setLogCategories(const std::string &categories)
 
 }
 
-namespace Bitdinastycoin = Monero;
+namespace Bitdinastycoin = Dinastycoin;

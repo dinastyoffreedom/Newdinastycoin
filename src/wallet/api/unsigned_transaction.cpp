@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2014-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -42,7 +42,7 @@
 
 using namespace std;
 
-namespace Monero {
+namespace Dinastycoin {
 
 UnsignedTransaction::~UnsignedTransaction() {}
 
@@ -317,5 +317,5 @@ uint64_t UnsignedTransactionImpl::minMixinCount() const
 
 } // namespace
 
-namespace Bitdinastycoin = Monero;
+namespace Bitdinastycoin = Dinastycoin;
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019, The Monero Project
+// Copyright (c) 2017-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -108,60 +108,60 @@ namespace chacha {
 // Cold Key image sync
 namespace ki {
 
-  using MoneroTransferDetails = messages::dinastycoin::MoneroKeyImageSyncStepRequest_MoneroTransferDetails;
-  using MoneroSubAddressIndicesList = messages::dinastycoin::MoneroKeyImageExportInitRequest_MoneroSubAddressIndicesList;
-  using MoneroExportedKeyImage = messages::dinastycoin::MoneroKeyImageSyncStepAck_MoneroExportedKeyImage;
+  using DinastycoinTransferDetails = messages::dinastycoin::DinastycoinKeyImageSyncStepRequest_DinastycoinTransferDetails;
+  using DinastycoinSubAddressIndicesList = messages::dinastycoin::DinastycoinKeyImageExportInitRequest_DinastycoinSubAddressIndicesList;
+  using DinastycoinExportedKeyImage = messages::dinastycoin::DinastycoinKeyImageSyncStepAck_DinastycoinExportedKeyImage;
   using exported_key_image = hw::device_cold::exported_key_image;
 
   /**
-   * Converts transfer details to the MoneroTransferDetails required for KI sync
+   * Converts transfer details to the DinastycoinTransferDetails required for KI sync
    */
   bool key_image_data(wallet_shim * wallet,
                       const std::vector<tools::wallet2::transfer_details> & transfers,
-                      std::vector<MoneroTransferDetails> & res);
+                      std::vector<DinastycoinTransferDetails> & res);
 
   /**
-   * Computes a hash over MoneroTransferDetails. Commitment used in the KI sync.
+   * Computes a hash over DinastycoinTransferDetails. Commitment used in the KI sync.
    */
-  std::string compute_hash(const MoneroTransferDetails & rr);
+  std::string compute_hash(const DinastycoinTransferDetails & rr);
 
   /**
    * Generates KI sync request with commitments computed.
    */
-  void generate_commitment(std::vector<MoneroTransferDetails> & mtds,
+  void generate_commitment(std::vector<DinastycoinTransferDetails> & mtds,
                            const std::vector<tools::wallet2::transfer_details> & transfers,
-                           std::shared_ptr<messages::dinastycoin::MoneroKeyImageExportInitRequest> & req);
+                           std::shared_ptr<messages::dinastycoin::DinastycoinKeyImageExportInitRequest> & req);
 
   /**
    * Processes Live refresh step response, parses KI, checks the signature
    */
   void live_refresh_ack(const ::crypto::secret_key & view_key_priv,
                         const ::crypto::public_key& out_key,
-                        const std::shared_ptr<messages::dinastycoin::MoneroLiveRefreshStepAck> & ack,
+                        const std::shared_ptr<messages::dinastycoin::DinastycoinLiveRefreshStepAck> & ack,
                         ::cryptonote::keypair& in_ephemeral,
                         ::crypto::key_image& ki);
 }
 
 // Cold transaction signing
 namespace tx {
-  using TsxData = messages::dinastycoin::MoneroTransactionInitRequest_MoneroTransactionData;
-  using MoneroTransactionDestinationEntry = messages::dinastycoin::MoneroTransactionDestinationEntry;
-  using MoneroAccountPublicAddress = messages::dinastycoin::MoneroTransactionDestinationEntry_MoneroAccountPublicAddress;
-  using MoneroTransactionSourceEntry = messages::dinastycoin::MoneroTransactionSourceEntry;
-  using MoneroMultisigKLRki = messages::dinastycoin::MoneroTransactionSourceEntry_MoneroMultisigKLRki;
-  using MoneroOutputEntry = messages::dinastycoin::MoneroTransactionSourceEntry_MoneroOutputEntry;
-  using MoneroRctKey = messages::dinastycoin::MoneroTransactionSourceEntry_MoneroOutputEntry_MoneroRctKeyPublic;
-  using MoneroRsigData = messages::dinastycoin::MoneroTransactionRsigData;
+  using TsxData = messages::dinastycoin::DinastycoinTransactionInitRequest_DinastycoinTransactionData;
+  using DinastycoinTransactionDestinationEntry = messages::dinastycoin::DinastycoinTransactionDestinationEntry;
+  using DinastycoinAccountPublicAddress = messages::dinastycoin::DinastycoinTransactionDestinationEntry_DinastycoinAccountPublicAddress;
+  using DinastycoinTransactionSourceEntry = messages::dinastycoin::DinastycoinTransactionSourceEntry;
+  using DinastycoinMultisigKLRki = messages::dinastycoin::DinastycoinTransactionSourceEntry_DinastycoinMultisigKLRki;
+  using DinastycoinOutputEntry = messages::dinastycoin::DinastycoinTransactionSourceEntry_DinastycoinOutputEntry;
+  using DinastycoinRctKey = messages::dinastycoin::DinastycoinTransactionSourceEntry_DinastycoinOutputEntry_DinastycoinRctKeyPublic;
+  using DinastycoinRsigData = messages::dinastycoin::DinastycoinTransactionRsigData;
 
   using tx_construction_data = tools::wallet2::tx_construction_data;
   using unsigned_tx_set = tools::wallet2::unsigned_tx_set;
 
-  void translate_address(MoneroAccountPublicAddress * dst, const cryptonote::account_public_address * src);
-  void translate_dst_entry(MoneroTransactionDestinationEntry * dst, const cryptonote::tx_destination_entry * src);
-  void translate_src_entry(MoneroTransactionSourceEntry * dst, const cryptonote::tx_source_entry * src);
-  void translate_klrki(MoneroMultisigKLRki * dst, const rct::multisig_kLRki * src);
-  void translate_rct_key(MoneroRctKey * dst, const rct::ctkey * src);
-  std::string hash_addr(const MoneroAccountPublicAddress * addr, boost::optional<uint64_t> amount = boost::none, boost::optional<bool> is_subaddr = boost::none);
+  void translate_address(DinastycoinAccountPublicAddress * dst, const cryptonote::account_public_address * src);
+  void translate_dst_entry(DinastycoinTransactionDestinationEntry * dst, const cryptonote::tx_destination_entry * src);
+  void translate_src_entry(DinastycoinTransactionSourceEntry * dst, const cryptonote::tx_source_entry * src);
+  void translate_klrki(DinastycoinMultisigKLRki * dst, const rct::multisig_kLRki * src);
+  void translate_rct_key(DinastycoinRctKey * dst, const rct::ctkey * src);
+  std::string hash_addr(const DinastycoinAccountPublicAddress * addr, boost::optional<uint64_t> amount = boost::none, boost::optional<bool> is_subaddr = boost::none);
   std::string hash_addr(const std::string & spend_key, const std::string & view_key, boost::optional<uint64_t> amount = boost::none, boost::optional<bool> is_subaddr = boost::none);
   std::string hash_addr(const ::crypto::public_key * spend_key, const ::crypto::public_key * view_key, boost::optional<uint64_t> amount = boost::none, boost::optional<bool> is_subaddr = boost::none);
   ::crypto::secret_key compute_enc_key(const ::crypto::secret_key & private_view_key, const std::string & aux, const std::string & salt);
@@ -179,7 +179,7 @@ namespace tx {
     unsigned rsig_type;
     int bp_version;
     std::vector<uint64_t> grouping_vct;
-    std::shared_ptr<MoneroRsigData> rsig_param;
+    std::shared_ptr<DinastycoinRsigData> rsig_param;
     size_t cur_input_idx;
     size_t cur_output_idx;
     size_t cur_batch_idx;
@@ -229,42 +229,42 @@ namespace tx {
     void extract_payment_id();
     void compute_integrated_indices(TsxData * tsx_data);
     bool should_compute_bp_now() const;
-    void compute_bproof(messages::dinastycoin::MoneroTransactionRsigData & rsig_data);
+    void compute_bproof(messages::dinastycoin::DinastycoinTransactionRsigData & rsig_data);
     void process_bproof(rct::Bulletproof & bproof);
 
   public:
     Signer(wallet_shim * wallet2, const unsigned_tx_set * unsigned_tx, size_t tx_idx = 0, hw::tx_aux_data * aux_data = nullptr);
 
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionInitRequest> step_init();
-    void step_init_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionInitAck> ack);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionInitRequest> step_init();
+    void step_init_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionInitAck> ack);
 
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionSetInputRequest> step_set_input(size_t idx);
-    void step_set_input_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionSetInputAck> ack);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionSetInputRequest> step_set_input(size_t idx);
+    void step_set_input_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionSetInputAck> ack);
 
     void sort_ki();
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionInputsPermutationRequest> step_permutation();
-    void step_permutation_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionInputsPermutationAck> ack);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionInputsPermutationRequest> step_permutation();
+    void step_permutation_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionInputsPermutationAck> ack);
 
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionInputViniRequest> step_set_vini_input(size_t idx);
-    void step_set_vini_input_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionInputViniAck> ack);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionInputViniRequest> step_set_vini_input(size_t idx);
+    void step_set_vini_input_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionInputViniAck> ack);
 
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionAllInputsSetRequest> step_all_inputs_set();
-    void step_all_inputs_set_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionAllInputsSetAck> ack);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionAllInputsSetRequest> step_all_inputs_set();
+    void step_all_inputs_set_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionAllInputsSetAck> ack);
 
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionSetOutputRequest> step_set_output(size_t idx);
-    void step_set_output_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionSetOutputAck> ack);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionSetOutputRequest> step_set_output(size_t idx);
+    void step_set_output_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionSetOutputAck> ack);
 
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionSetOutputRequest> step_rsig(size_t idx);
-    void step_set_rsig_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionSetOutputAck> ack);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionSetOutputRequest> step_rsig(size_t idx);
+    void step_set_rsig_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionSetOutputAck> ack);
 
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionAllOutSetRequest> step_all_outs_set();
-    void step_all_outs_set_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionAllOutSetAck> ack, hw::device &hwdev);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionAllOutSetRequest> step_all_outs_set();
+    void step_all_outs_set_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionAllOutSetAck> ack, hw::device &hwdev);
 
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionSignInputRequest> step_sign_input(size_t idx);
-    void step_sign_input_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionSignInputAck> ack);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionSignInputRequest> step_sign_input(size_t idx);
+    void step_sign_input_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionSignInputAck> ack);
 
-    std::shared_ptr<messages::dinastycoin::MoneroTransactionFinalRequest> step_final();
-    void step_final_ack(std::shared_ptr<const messages::dinastycoin::MoneroTransactionFinalAck> ack);
+    std::shared_ptr<messages::dinastycoin::DinastycoinTransactionFinalRequest> step_final();
+    void step_final_ack(std::shared_ptr<const messages::dinastycoin::DinastycoinTransactionFinalAck> ack);
 
     std::string store_tx_aux_info();
 
@@ -312,14 +312,14 @@ namespace tx {
   // TX Key decryption
   void load_tx_key_data(hw::device_cold::tx_key_data_t & res, const std::string & data);
 
-  std::shared_ptr<messages::dinastycoin::MoneroGetTxKeyRequest> get_tx_key(
+  std::shared_ptr<messages::dinastycoin::DinastycoinGetTxKeyRequest> get_tx_key(
       const hw::device_cold::tx_key_data_t & tx_data);
 
   void get_tx_key_ack(
       std::vector<::crypto::secret_key> & tx_keys,
       const std::string & tx_prefix_hash,
       const ::crypto::secret_key & view_key_priv,
-      std::shared_ptr<const messages::dinastycoin::MoneroGetTxKeyAck> ack
+      std::shared_ptr<const messages::dinastycoin::DinastycoinGetTxKeyAck> ack
   );
 }
 

@@ -1,6 +1,6 @@
-# Monero Blockchain Utilities
+# Dinastycoin Blockchain Utilities
 
-Copyright (c) 2014-2019, The Monero Project
+Copyright (c) 2014-2019, The Dinastycoin Project
 
 ## Introduction
 

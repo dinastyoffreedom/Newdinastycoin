@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright (c) 2019 The Monero Project
+# Copyright (c) 2019 The Dinastycoin Project
 # 
 # All rights reserved.
 # 

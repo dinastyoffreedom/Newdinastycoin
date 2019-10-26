@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2014-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -35,7 +35,7 @@
 
 using namespace std;
 
-namespace Monero {
+namespace Dinastycoin {
 namespace Utils {
 
 bool isAddressLocal(const std::string &address)
@@ -61,4 +61,4 @@ void onStartup()
 
 } // namespace
 
-namespace Bitdinastycoin = Monero;
+namespace Bitdinastycoin = Dinastycoin;

@@ -2,7 +2,7 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="sk">
 <context>
-    <name>Monero::AddressBookImpl</name>
+    <name>Dinastycoin::AddressBookImpl</name>
     <message>
         <location filename="../src/wallet/api/address_book.cpp" line="53"/>
         <source>Invalid destination address</source>
@@ -25,7 +25,7 @@
     </message>
 </context>
 <context>
-    <name>Monero::PendingTransactionImpl</name>
+    <name>Dinastycoin::PendingTransactionImpl</name>
     <message>
         <location filename="../src/wallet/api/pending_transaction.cpp" line="91"/>
         <source>Attempting to save transaction to file, but specified file(s) exist. Exiting to not risk overwriting. File:</source>
@@ -78,7 +78,7 @@
     </message>
 </context>
 <context>
-    <name>Monero::UnsignedTransactionImpl</name>
+    <name>Dinastycoin::UnsignedTransactionImpl</name>
     <message>
         <location filename="../src/wallet/api/unsigned_transaction.cpp" line="75"/>
         <source>This is a watch only wallet</source>
@@ -132,7 +132,7 @@
     </message>
 </context>
 <context>
-    <name>Monero::WalletImpl</name>
+    <name>Dinastycoin::WalletImpl</name>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1513"/>
         <location filename="../src/wallet/api/wallet.cpp" line="1602"/>
@@ -1339,37 +1339,37 @@
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2155"/>
-        <source>Welcome to Monero, the private cryptocurrency.</source>
+        <source>Welcome to Dinastycoin, the private cryptocurrency.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2157"/>
-        <source>Monero, like Bitcoin, is a cryptocurrency. That is, it is digital money.</source>
+        <source>Dinastycoin, like Bitcoin, is a cryptocurrency. That is, it is digital money.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2161"/>
-        <source>Monero protects your privacy on the blockchain, and while Monero strives to improve all the time,</source>
+        <source>Dinastycoin protects your privacy on the blockchain, and while Dinastycoin strives to improve all the time,</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2162"/>
-        <source>no privacy technology can be 100% perfect, Monero included.</source>
+        <source>no privacy technology can be 100% perfect, Dinastycoin included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2163"/>
-        <source>Monero cannot protect you from malware, and it may not be as effective as we hope against powerful adversaries.</source>
+        <source>Dinastycoin cannot protect you from malware, and it may not be as effective as we hope against powerful adversaries.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2164"/>
-        <source>Flaws in Monero may be discovered in the future, and attacks may be developed to peek under some</source>
+        <source>Flaws in Dinastycoin may be discovered in the future, and attacks may be developed to peek under some</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2165"/>
-        <source>of the layers of privacy Monero provides. Be safe and practice defense in depth.</source>
+        <source>of the layers of privacy Dinastycoin provides. Be safe and practice defense in depth.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1622,9 +1622,9 @@ If the &quot;tag_description&quot; argument is specified, the tag &lt;tag_name&g
  auto-low-priority &lt;1|0&gt;
    Whether to automatically use the low priority fee level when it&apos;s safe to do so.
  segregate-pre-fork-outputs &lt;1|0&gt;
-   Set this if you intend to spend outputs on both Monero AND a key reusing fork.
+   Set this if you intend to spend outputs on both Dinastycoin AND a key reusing fork.
  key-reuse-mitigation2 &lt;1|0&gt;
-   Set this if you are not sure whether you will spend on a key reusing Monero fork later.
+   Set this if you are not sure whether you will spend on a key reusing Dinastycoin fork later.
  subaddress-lookahead &lt;major&gt;:&lt;minor&gt;
    Set the lookahead sizes for the subaddress hash table.
  segregation-height &lt;n&gt;
@@ -1868,7 +1868,7 @@ Key Image, &quot;absolute&quot;, list of rings</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3331"/>
-        <source>Prints basic info about Monero for first time users</source>
+        <source>Prints basic info about Dinastycoin for first time users</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3081,7 +3081,7 @@ Get help about a subcommand with: help mms &lt;subcommand&gt;, or mms help &lt;s
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3214"/>
-        <source>Set or modify authorized signer info (single-word label, transport address, Monero address), or list all signers</source>
+        <source>Set or modify authorized signer info (single-word label, transport address, Dinastycoin address), or list all signers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3334,7 +3334,7 @@ By using &apos;sync&apos; processing of waiting messages with multisig sync info
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4237"/>
-        <source>You are strongly encouraged to connect to the Monero network using your own daemon</source>
+        <source>You are strongly encouraged to connect to the Dinastycoin network using your own daemon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3349,7 +3349,7 @@ By using &apos;sync&apos; processing of waiting messages with multisig sync info
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4258"/>
-        <source>If you are new to Monero, type &quot;welcome&quot; for a brief overview.</source>
+        <source>If you are new to Dinastycoin, type &quot;welcome&quot; for a brief overview.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3374,7 +3374,7 @@ By using &apos;sync&apos; processing of waiting messages with multisig sync info
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4848"/>
-        <source>Background mining enabled. Thank you for supporting the Monero network.</source>
+        <source>Background mining enabled. Thank you for supporting the Dinastycoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3441,7 +3441,7 @@ Input %llu/%llu (%s): amount=%s</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5838"/>
-        <source>I locked your Monero wallet to protect you while you were away</source>
+        <source>I locked your Dinastycoin wallet to protect you while you were away</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3483,7 +3483,7 @@ Input %llu/%llu (%s): amount=%s</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2158"/>
-        <source>Unlike Bitcoin, your Monero transactions and balance stay private and are not visible to the world by default.</source>
+        <source>Unlike Bitcoin, your Dinastycoin transactions and balance stay private and are not visible to the world by default.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3493,7 +3493,7 @@ Input %llu/%llu (%s): amount=%s</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2167"/>
-        <source>Welcome to Monero and financial privacy. For more information see https://GetMonero.org</source>
+        <source>Welcome to Dinastycoin and financial privacy. For more information see https://GetDinastycoin.org</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3824,7 +3824,7 @@ This transaction (including %s change) will unlock on block %llu, in approximate
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9923"/>
-        <source>Monero Address</source>
+        <source>Dinastycoin Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3936,12 +3936,12 @@ This transaction (including %s change) will unlock on block %llu, in approximate
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10148"/>
-        <source>Invalid Monero address</source>
+        <source>Invalid Dinastycoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10155"/>
-        <source>Wallet state does not allow changing Monero addresses anymore</source>
+        <source>Wallet state does not allow changing Dinastycoin addresses anymore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4320,7 +4320,7 @@ This transaction (including %s change) will unlock on block %llu, in approximate
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7073"/>
-        <source>Donating %s %s to The Monero Project (donate.getdinastycoin.org or %s).</source>
+        <source>Donating %s %s to The Dinastycoin Project (donate.getdinastycoin.org or %s).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5323,7 +5323,7 @@ Use &quot;mms note&quot; to display the waiting notes</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="444"/>
-        <source> Monero Address = </source>
+        <source> Dinastycoin Address = </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5471,7 +5471,7 @@ Use &quot;mms note&quot; to display the waiting notes</source>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9740"/>
         <source>This is the command line dinastycoin wallet. It needs to connect to a dinastycoin
 daemon to work correctly.
-WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+WARNING: Do not reuse your Dinastycoin keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

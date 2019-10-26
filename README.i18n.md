@@ -1,9 +1,9 @@
-Monero daemon internationalization
+Dinastycoin daemon internationalization
 ==================================
 
-The Monero command line tools can be translated in various languages. If you wish to contribute and need help/support, contact the [Monero Localization Workgroup on Taiga](https://taiga.getdinastycoin.org/project/erciccione-dinastycoin-localization/) or come chat on `#dinastycoin-translations` (Freenode/IRC, riot/matrix, MatterMost)
+The Dinastycoin command line tools can be translated in various languages. If you wish to contribute and need help/support, contact the [Dinastycoin Localization Workgroup on Taiga](https://taiga.getdinastycoin.org/project/erciccione-dinastycoin-localization/) or come chat on `#dinastycoin-translations` (Freenode/IRC, riot/matrix, MatterMost)
 
-In order to use the same translation workflow as the [Monero Core GUI](https://github.com/dinastycoin-project/dinastycoin-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
+In order to use the same translation workflow as the [Dinastycoin Core GUI](https://github.com/dinastycoin-project/dinastycoin-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
 
 ### Tools for translators
 

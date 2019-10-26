@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019, The Monero Project
+// Copyright (c) 2017-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -242,7 +242,7 @@ namespace trezor {
 
     bool reset();
 
-    // Default derivation path for Monero
+    // Default derivation path for Dinastycoin
     static const uint32_t DEFAULT_BIP44_PATH[2];
 
     std::shared_ptr<Transport> get_transport(){

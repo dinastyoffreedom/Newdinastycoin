@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Monero Project
+// Copyright (c) 2014-2019, The Dinastycoin Project
 // 
 // All rights reserved.
 // 
@@ -745,7 +745,7 @@ namespace tools
           }
           if (addresses.empty())
           {
-            er.message = std::string("No Monero address found at ") + url;
+            er.message = std::string("No Dinastycoin address found at ") + url;
             return {};
           }
           return addresses[0];
@@ -1968,7 +1968,7 @@ namespace tools
         }
         if (addresses.empty())
         {
-          er.message = std::string("No Monero address found at ") + url;
+          er.message = std::string("No Dinastycoin address found at ") + url;
           return {};
         }
         return addresses[0];
@@ -2760,7 +2760,7 @@ namespace tools
         }
         if (addresses.empty())
         {
-          er.message = std::string("No Monero address found at ") + url;
+          er.message = std::string("No Dinastycoin address found at ") + url;
           return {};
         }
         return addresses[0];
@@ -2847,7 +2847,7 @@ namespace tools
           }
           if (addresses.empty())
           {
-            er.message = std::string("No Monero address found at ") + url;
+            er.message = std::string("No Dinastycoin address found at ") + url;
             return {};
           }
           return addresses[0];
@@ -4169,7 +4169,7 @@ namespace tools
             }
             if (addresses.empty())
             {
-              er.message = std::string("No Monero address found at ") + url;
+              er.message = std::string("No Dinastycoin address found at ") + url;
               return {};
             }
             address = addresses[0];

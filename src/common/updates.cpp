@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019, The Monero Project
+// Copyright (c) 2017-2019, The Dinastycoin Project
 // 
 // All rights reserved.
 // 
@@ -44,7 +44,7 @@ namespace tools
 
     MDEBUG("Checking updates for " << buildtag << " " << software);
 
-    // All four MoneroPulse domains have DNSSEC on and valid
+    // All four DinastycoinPulse domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls = {
         "updates.dinastycoinpulse.org",
         "updates.dinastycoinpulse.net",

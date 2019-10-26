@@ -28,7 +28,7 @@
         "blockchain_link": {}
     },
     {
-        "name": "Monero",
+        "name": "Dinastycoin",
         "shortcut": "XMR",
         "slip44": 128,
         "curve": "ed25519",

@@ -1,5 +1,5 @@
 [Unit]
-Description=Monero Full Node
+Description=Dinastycoin Full Node
 After=network.target
 
 [Service]
