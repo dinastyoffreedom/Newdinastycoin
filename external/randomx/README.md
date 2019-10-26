@@ -29,7 +29,7 @@ Between May and August 2019, RandomX was audited by 4 independent security resea
 
 The first audit was generously funded by [Arweave](https://www.arweave.org/), one of the early adopters of RandomX. The remaining three audits were funded by donations from the [Monero community](https://ccs.getmonero.org/proposals/RandomX-audit.html). All four audits were coordinated by [OSTIF](https://ostif.org/).
 
-Final reports from all four audits are available in the [audits](audits/) directory. None of the audits found any critical vulnerabilities, but several changes in the algorithm and the code were made as a direct result of the audits. More details can be found in the [final report by OSTIF](https://ostif.org/four-audits-of-randomx-for-monero-and-arweave-have-been-completed-results/).
+Final reports from all four audits are available in the [audits](audits/) directory. None of the audits found any critical vulnerabilities, but several changes in the algorithm and the code were made as a direct result of the audits. More details can be found in the [final report by OSTIF](https://ostif.org/four-audits-of-randomx-for-dinastycoin-and-arweave-have-been-completed-results/).
 
 ## Build
 

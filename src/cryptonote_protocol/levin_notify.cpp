@@ -569,7 +569,7 @@ namespace levin
       epee::byte_slice message =
         epee::levin::make_notify(NOTIFY_NEW_TRANSACTIONS::ID, epee::strspan<std::uint8_t>(payload));
 
-      // traditional monero send technique
+      // traditional dinastycoin send technique
       zone_->strand.dispatch(flood_notify{zone_, std::move(message), source});
     }
 

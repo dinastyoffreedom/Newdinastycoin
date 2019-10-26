@@ -1,4 +1,4 @@
-name: monero
+name: dinastycoin
 version: 0.11.1.0-1
 summary: "Monero: the secure, private, untraceable cryptocurrency https://getmonero.org"
 description: |
@@ -16,16 +16,16 @@ apps:
         plugs:
             - network
             - network-bind
-    monero-wallet-rpc:
+    dinastycoin-wallet-rpc:
         command: |
-          monero-wallet-rpc --log-file ${SNAP_USER_DATA}
+          dinastycoin-wallet-rpc --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network
             - network-bind
-    monero-wallet-cli:
+    dinastycoin-wallet-cli:
         command: |
-          monero-wallet-cli --log-file ${SNAP_USER_DATA}
+          dinastycoin-wallet-cli --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network

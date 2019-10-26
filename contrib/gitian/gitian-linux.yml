@@ -1,5 +1,5 @@
 ---
-name: "monero-linux-0.14"
+name: "dinastycoin-linux-0.14"
 enable_cache: true
 suites:
 - "bionic"
@@ -43,8 +43,8 @@ packages:
 - "libprotobuf-dev"
 - "python3-zmq"
 remotes:
-- "url": "https://github.com/monero-project/monero.git"
-  "dir": "monero"
+- "url": "https://github.com/dinastycoin-project/dinastycoin.git"
+  "dir": "dinastycoin"
 files: []
 script: |
 
@@ -130,7 +130,7 @@ script: |
   done
 
   git config --global core.abbrev 9
-  cd monero
+  cd dinastycoin
   # Set the version string that gets added to the tar archive name
   version="`git describe`"
   if [[ $version == *"-"*"-"* ]]; then
@@ -162,7 +162,7 @@ script: |
     mkdir build && cd build
     cmake .. -DCMAKE_TOOLCHAIN_FILE=${BASEPREFIX}/${i}/share/toolchain.cmake -DBACKCOMPAT=ON
     make ${MAKEOPTS}
-    DISTNAME=monero-${i}-${version}
+    DISTNAME=dinastycoin-${i}-${version}
     mv bin ${DISTNAME}
     find ${DISTNAME}/ | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | bzip2 -9 > ${OUTDIR}/${DISTNAME}.tar.bz2
     cd ..

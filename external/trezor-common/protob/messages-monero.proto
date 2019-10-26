@@ -1,5 +1,5 @@
 syntax = "proto2";
-package hw.trezor.messages.monero;
+package hw.trezor.messages.dinastycoin;
 
 // Sugar for easier handling in Java
 option java_package = "com.satoshilabs.trezor.lib.protobuf";
@@ -140,7 +140,7 @@ message MoneroTransactionInitRequest {
         repeated uint32 integrated_indices = 12;
         optional uint32 client_version = 13;  // connected client version
         optional uint32 hard_fork = 14;       // transaction hard fork number
-        optional bytes monero_version = 15;   // monero software version
+        optional bytes monero_version = 15;   // dinastycoin software version
     }
 }
 

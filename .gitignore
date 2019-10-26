@@ -105,5 +105,5 @@ nbproject
 # TeXlipse plugin
 .texlipse
 .idea/
-
+.vscode/
 /testnet

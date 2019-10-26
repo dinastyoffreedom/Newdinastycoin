@@ -3,17 +3,17 @@ Description=Monero Full Node
 After=network.target
 
 [Service]
-User=monero
-Group=monero
+User=dinastycoin
+Group=dinastycoin
 WorkingDirectory=~
-RuntimeDirectory=monero
+RuntimeDirectory=dinastycoin
 
 # Clearnet config
 #
 Type=forking
-PIDFile=/run/monero/monerod.pid
+PIDFile=/run/dinastycoin/monerod.pid
 ExecStart=/usr/bin/monerod --config-file /etc/monerod.conf \
-    --detach --pidfile /run/monero/monerod.pid
+    --detach --pidfile /run/dinastycoin/monerod.pid
 
 # Tor config
 #

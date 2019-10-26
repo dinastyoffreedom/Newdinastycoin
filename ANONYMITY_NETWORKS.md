@@ -19,8 +19,8 @@ network. The transaction will not be broadcast unless an anonymity connection
 is made or until `monerod` is shutdown and restarted with only public
 connections enabled.
 
-Anonymity networks can also be used with `monero-wallet-cli` and
-`monero-wallet-rpc` - the wallets will connect to a daemon through a proxy. The
+Anonymity networks can also be used with `dinastycoin-wallet-cli` and
+`dinastycoin-wallet-rpc` - the wallets will connect to a daemon through a proxy. The
 daemon must provide a hidden service for the RPC itself, which is separate from
 the hidden service for P2P connections.
 
@@ -87,7 +87,7 @@ P2P anonymity connections. The anonymity network (Tor/i2p) is
 [configured in the same manner](#configuration), except the localhost port
 must be the RPC port (typically 18081 for mainnet) instead of the p2p port:
 
-> HiddenServiceDir /var/lib/tor/data/monero
+> HiddenServiceDir /var/lib/tor/data/dinastycoin
 > HiddenServicePort 18081 127.0.0.1:18081
 
 Then the wallet will be configured to use a Tor/i2p address:
@@ -125,12 +125,12 @@ can distribute the address to its other peers.
 Tor must be configured for hidden services. An example configuration ("torrc")
 might look like:
 
-> HiddenServiceDir /var/lib/tor/data/monero
+> HiddenServiceDir /var/lib/tor/data/dinastycoin
 > HiddenServicePort 28083 127.0.0.1:28083
 
-This will store key information in `/var/lib/tor/data/monero` and will forward
+This will store key information in `/var/lib/tor/data/dinastycoin` and will forward
 "Tor port" 28083 to port 28083 of ip 127.0.0.1. The file
-`/usr/lib/tor/data/monero/hostname` will contain the ".onion" address for use
+`/usr/lib/tor/data/dinastycoin/hostname` will contain the ".onion" address for use
 with `--anonymous-inbound`.
 
 I2P must be configured with a standard server tunnel. Configuration differs by
