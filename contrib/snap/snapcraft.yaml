@@ -16,9 +16,9 @@ apps:
         plugs:
             - network
             - network-bind
-    dinastycoin-wallet-rpc:
+    dinasty-wallet-rpc:
         command: |
-          dinastycoin-wallet-rpc --log-file ${SNAP_USER_DATA}
+          dinasty-wallet-rpc --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network

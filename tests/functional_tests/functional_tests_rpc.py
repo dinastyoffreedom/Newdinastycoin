@@ -44,7 +44,7 @@ dinastycoind_extra = [
   [],
   ["--rpc-payment-address", "44SKxxLQw929wRF6BA9paQ1EWFshNnKhXM3qz6Mo3JGDE2YG3xyzVutMStEicxbQGRfrYvAAYxH6Fe8rnD56EaNwUiqhcwR", "--rpc-payment-difficulty", str(DIFFICULTY), "--rpc-payment-credits", "5000", "--data-dir", builddir + "/functional-tests-directory/dinastycoind1"],
 ]
-wallet_base = [builddir + "/bin/dinastycoin-wallet-rpc", "--wallet-dir", WALLET_DIRECTORY, "--rpc-bind-port", "wallet_port", "--disable-rpc-login", "--rpc-ssl", "disabled", "--daemon-ssl", "disabled", "--daemon-port", "18180", "--log-level", "1"]
+wallet_base = [builddir + "/bin/dinasty-wallet-rpc", "--wallet-dir", WALLET_DIRECTORY, "--rpc-bind-port", "wallet_port", "--disable-rpc-login", "--rpc-ssl", "disabled", "--daemon-ssl", "disabled", "--daemon-port", "18180", "--log-level", "1"]
 wallet_extra = [
 ]
 
