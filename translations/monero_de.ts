@@ -1511,8 +1511,8 @@ Amount, Spent(&quot;T&quot;|&quot;F&quot;), &quot;frozen&quot;|&quot;locked&quot
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2910"/>
-        <source>Donate &lt;amount&gt; to the development team (donate.getdinastycoin.org).</source>
-        <translation>Spende &lt;Betrag&gt; ans Entwicklerteam (donate.getdinastycoin.org).</translation>
+        <source>Donate &lt;amount&gt; to the development team (donate.dinastycoin.com).</source>
+        <translation>Spende &lt;Betrag&gt; ans Entwicklerteam (donate.dinastycoin.com).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2914"/>
@@ -4339,7 +4339,7 @@ This transaction (including %s change) will unlock on block %llu, in approximate
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7073"/>
-        <source>Donating %s %s to The Dinastycoin Project (donate.getdinastycoin.org or %s).</source>
+        <source>Donating %s %s to The Dinastycoin Project (donate.dinastycoin.com or %s).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

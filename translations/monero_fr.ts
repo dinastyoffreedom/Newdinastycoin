@@ -2554,8 +2554,8 @@ Amount, Spent(&quot;T&quot;|&quot;F&quot;), &quot;frozen&quot;|&quot;locked&quot
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2910"/>
-        <source>Donate &lt;amount&gt; to the development team (donate.getdinastycoin.org).</source>
-        <translation>Donner &lt;montant&gt; à l&apos;équipe de développement (donate.getdinastycoin.org).</translation>
+        <source>Donate &lt;amount&gt; to the development team (donate.dinastycoin.com).</source>
+        <translation>Donner &lt;montant&gt; à l&apos;équipe de développement (donate.dinastycoin.com).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2917"/>
@@ -4298,8 +4298,8 @@ Entrée %llu/%llu (%s): montant=%s</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7073"/>
-        <source>Donating %s %s to The Dinastycoin Project (donate.getdinastycoin.org or %s).</source>
-        <translation>Don de %s %s à The Dinastycoin Project (donate.getdinastycoin.org ou %s).</translation>
+        <source>Donating %s %s to The Dinastycoin Project (donate.dinastycoin.com or %s).</source>
+        <translation>Don de %s %s à The Dinastycoin Project (donate.dinastycoin.com ou %s).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7407"/>
