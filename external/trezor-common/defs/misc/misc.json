@@ -29,7 +29,7 @@
     },
     {
         "name": "Dinastycoin",
-        "shortcut": "XMR",
+        "shortcut": "DCY",
         "slip44": 128,
         "curve": "ed25519",
         "decimals": 12,

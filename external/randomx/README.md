@@ -66,7 +66,7 @@ RandomX was primarily designed as a PoW algorithm for [Dinastycoin](https://www.
 If you wish to use RandomX as a PoW algorithm for your cryptocurrency, please follow the [configuration guidelines](doc/configuration.md).
 
 ### CPU performance
-The table below lists the performance of selected CPUs using the optimal number of threads (T) and large pages (if possible), in hashes per second (H/s). "CNv4" refers to the CryptoNight variant 4 (CN/R) hashrate measured using [XMRig](https://github.com/dcyig/dcyig) v2.14.1. "Fast mode" and "Light mode" are the two modes of RandomX.
+The table below lists the performance of selected CPUs using the optimal number of threads (T) and large pages (if possible), in hashes per second (H/s). "CNv4" refers to the CryptoNight variant 4 (CN/R) hashrate measured using [DCYig](https://github.com/dcyig/dcyig) v2.14.1. "Fast mode" and "Light mode" are the two modes of RandomX.
 
 |CPU|RAM|OS|AES|CNv4|Fast mode|Light mode|
 |---|---|--|---|-----|------|--------------|
@@ -85,7 +85,7 @@ SChernykh is developing GPU mining code for RandomX. Benchmarks are included in 
 * [CUDA miner](https://github.com/SChernykh/RandomX_CUDA) - NVIDIA GPUs.
 * [OpenCL miner](https://github.com/SChernykh/RandomX_OpenCL) - only for AMD Vega and AMD Polaris GPUs (uses GCN machine code).
 
-The code from the above repositories is included in the open source miner [XMRig](https://github.com/dcyig/dcyig).
+The code from the above repositories is included in the open source miner [DCYig](https://github.com/dcyig/dcyig).
 
 Note that GPUs are at a disadvantage when running RandomX since the algorithm was designed to be efficient on CPUs.
 
@@ -140,8 +140,8 @@ The author of RandomX declares no competing financial interest.
 
 If you'd like to use RandomX, please consider donating to help cover the development cost of the algorithm.
 
-Author's XMR address:
+Author's DCY address:
 ```
 845xHUh5GvfHwc2R8DVJCE7BT2sd4YEcmjG8GNSdmeNsP5DTEjXd1CNgxTcjHjiFuthRHAoVEJjM7GyKzQKLJtbd56xbh7V
 ```
-Total donations received: ~3.86 XMR (as of 30th August 2019). Thanks to all contributors.
+Total donations received: ~3.86 DCY (as of 30th August 2019). Thanks to all contributors.

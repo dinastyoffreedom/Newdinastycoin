@@ -1,8 +1,8 @@
 {
-  "symbol": "EXMR",
+  "symbol": "EDCY",
   "address": "0xc98e0639c6d2EC037A615341c369666B110e80E5",
   "decimals": 8,
-  "name": "eXMRcoin",
+  "name": "eDCYcoin",
   "ens_address": "",
   "website": "https://edcy.io/",
   "logo": {
@@ -20,14 +20,14 @@
     "chat": "",
     "facebook": "https://www.facebook.com/edcycoin/",
     "forum": "",
-    "github": "https://github.com/eXMRcoin/",
+    "github": "https://github.com/eDCYcoin/",
     "gitter": "",
     "instagram": "",
     "linkedin": "",
-    "reddit": "https://www.reddit.com/user/eXMRcoin/",
+    "reddit": "https://www.reddit.com/user/eDCYcoin/",
     "slack": "",
-    "telegram": "https://t.me/joinEXMR/",
-    "twitter": "https://www.twitter.com/eXMRCoin",
+    "telegram": "https://t.me/joinEDCY/",
+    "twitter": "https://www.twitter.com/eDCYCoin",
     "youtube": ""
   }
 }

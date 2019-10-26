@@ -10240,16 +10240,16 @@
                 }
             ]
         },
-        "erc20:eth:EXMR": {
+        "erc20:eth:EDCY": {
             "address": "0xc98e0639c6d2EC037A615341c369666B110e80E5",
             "links": {
-                "Github": "https://github.com/eXMRcoin/",
+                "Github": "https://github.com/eDCYcoin/",
                 "Homepage": "https://edcy.io/"
             },
             "marketcap_usd": 292248,
-            "name": "eXMRcoin",
+            "name": "eDCYcoin",
             "network": "eth",
-            "shortcut": "EXMR",
+            "shortcut": "EDCY",
             "t1_enabled": "yes",
             "t2_enabled": "yes",
             "type": "erc20",
@@ -29311,14 +29311,14 @@
                 }
             ]
         },
-        "misc:XMR": {
+        "misc:DCY": {
             "links": {
                 "Github": "https://github.com/dinastycoin-project/dinastycoin",
                 "Homepage": "https://getdinastycoin.org"
             },
             "marketcap_usd": 1507313034,
             "name": "Dinastycoin",
-            "shortcut": "XMR",
+            "shortcut": "DCY",
             "t1_enabled": "no",
             "t2_enabled": "yes",
             "type": "coin",
