@@ -131,7 +131,7 @@ int main(int argc, char* argv[])
 
   lookup(LOOKUP_A, {"seeds.dinastycoinseeds.se", "seeds.dinastycoinseeds.ae.org", "seeds.dinastycoinseeds.ch", "seeds.dinastycoinseeds.li"});
 
-  lookup(LOOKUP_TXT, {"updates.dinastycoinpulse.org", "updates.dinastycoinpulse.net", "updates.dinastycoinpulse.co", "updates.dinastycoinpulse.se"});
+  lookup(LOOKUP_TXT, {"updates.dinastycoin.com", "updates.dinastycoinpulse.net", "updates.dinastycoinpulse.co", "updates.dinastycoinpulse.se"});
 
   lookup(LOOKUP_TXT, {"checkpoints.dinastycoinpulse.org", "checkpoints.dinastycoinpulse.net", "checkpoints.dinastycoinpulse.co", "checkpoints.dinastycoinpulse.se"});
 

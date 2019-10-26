@@ -296,4 +296,7 @@ namespace command_line
 
   extern const arg_descriptor<bool> arg_help;
   extern const arg_descriptor<bool> arg_version;
+  //newly added code to get genesis tx
+  extern const arg_descriptor<bool> arg_print_genesis_tx;
+  //end
 }

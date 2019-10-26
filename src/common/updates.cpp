@@ -46,7 +46,7 @@ namespace tools
 
     // All four DinastycoinPulse domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls = {
-        "updates.dinastycoinpulse.org",
+        "updates.dinastycoin.com",
         "updates.dinastycoinpulse.net",
         "updates.dinastycoinpulse.co",
         "updates.dinastycoinpulse.se"
