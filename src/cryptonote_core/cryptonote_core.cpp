@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Dinastycoin Project
+// Copyright (c) 2015-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -485,7 +485,7 @@ namespace cryptonote
       {
         MWARNING("Found old-style blockchain.bin in " << old_files.string());
         MWARNING("Dinastycoin now uses a new format. You can either remove blockchain.bin to start syncing");
-        MWARNING("the blockchain anew, or use dinastycoin-blockchain-export and dinastycoin-blockchain-import to");
+        MWARNING("the blockchain anew, or use dinasty-blockchain-export and dinasty-blockchain-import to");
         MWARNING("convert your existing blockchain.bin to the new format. See README.md for instructions.");
         return false;
       }

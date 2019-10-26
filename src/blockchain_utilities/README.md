@@ -1,6 +1,6 @@
 # Dinastycoin Blockchain Utilities
 
-Copyright (c) 2014-2019, The Dinastycoin Project
+Copyright (c) 2015-2019, The Dinastycoin Project
 
 ## Introduction
 
@@ -12,16 +12,16 @@ See also each utility's "--help" option.
 
 ### Export an existing blockchain database
 
-`$ dinastycoin-blockchain-export`
+`$ dinasty-blockchain-export`
 
 This loads the existing blockchain and exports it to `$DINASTYCOIN_DATA_DIR/export/blockchain.raw`
 
 ### Import the exported file
 
-`$ dinastycoin-blockchain-import`
+`$ dinasty-blockchain-import`
 
 This imports blocks from `$DINASTYCOIN_DATA_DIR/export/blockchain.raw` (exported using the
-`dinastycoin-blockchain-export` tool as described above) into the current database.
+`dinasty-blockchain-export` tool as described above) into the current database.
 
 Defaults: `--batch on`, `--batch size 20000`, `--verify on`
 
@@ -30,14 +30,14 @@ Batch size refers to number of blocks and can be adjusted for performance based 
 Verification should only be turned off if importing from a trusted blockchain.
 
 If you encounter an error like "resizing not supported in batch mode", you can just re-run
-the `dinastycoin-blockchain-import` command again, and it will restart from where it left off.
+the `dinasty-blockchain-import` command again, and it will restart from where it left off.
 
 ```bash
 ## use default settings to import blockchain.raw into database
-$ dinastycoin-blockchain-import
+$ dinasty-blockchain-import
 
 ## fast import with large batch size, database mode "fastest", verification off
-$ dinastycoin-blockchain-import --batch-size 20000 --database lmdb#fastest --verify off
+$ dinasty-blockchain-import --batch-size 20000 --database lmdb#fastest --verify off
 
 ```
 
@@ -80,9 +80,9 @@ LMDB flags (more than one may be specified):
 ## Examples:
 
 ```bash
-$ dinastycoin-blockchain-import --database lmdb#fastest
+$ dinasty-blockchain-import --database lmdb#fastest
 
-$ dinastycoin-blockchain-import --database lmdb#nosync
+$ dinasty-blockchain-import --database lmdb#nosync
 
-$ dinastycoin-blockchain-import --database lmdb#nosync,nometasync
+$ dinasty-blockchain-import --database lmdb#nosync,nometasync
 ```

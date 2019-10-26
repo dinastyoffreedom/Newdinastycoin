@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2019, The Dinastycoin Project
+# Copyright (c) 2015-2019, The Dinastycoin Project
 #
 # All rights reserved.
 #
@@ -157,7 +157,7 @@ endif()
 
 set_property(TARGET blockchain_import
 	PROPERTY
-	OUTPUT_NAME "dinastycoin-blockchain-import")
+	OUTPUT_NAME "dinasty-blockchain-import")
 install(TARGETS blockchain_import DESTINATION bin)
 
 dinastycoin_add_executable(blockchain_export
@@ -178,7 +178,7 @@ target_link_libraries(blockchain_export
 
 set_property(TARGET blockchain_export
 	PROPERTY
-	OUTPUT_NAME "dinastycoin-blockchain-export")
+	OUTPUT_NAME "dinasty-blockchain-export")
 install(TARGETS blockchain_export DESTINATION bin)
 
 dinastycoin_add_executable(blockchain_blackball

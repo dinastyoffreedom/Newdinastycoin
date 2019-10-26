@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, The Dinastycoin Project
+// Copyright (c) 2015-2019, The Dinastycoin Project
 //
 // All rights reserved.
 //
@@ -92,7 +92,7 @@ int main(int argc, char* argv[])
     return 1;
   }
 
-  mlog_configure(mlog_get_default_log_path("dinastycoin-blockchain-export.log"), true);
+  mlog_configure(mlog_get_default_log_path("dinasty-blockchain-export.log"), true);
   if (!command_line::is_arg_defaulted(vm, arg_log_level))
     mlog_set_log(command_line::get_arg(vm, arg_log_level).c_str());
   else
