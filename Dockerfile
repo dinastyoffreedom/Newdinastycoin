@@ -203,10 +203,10 @@ VOLUME /home/dinastycoin/.dinastycoin
 VOLUME /wallet
 
 EXPOSE 38080
-EXPOSE 18081
+EXPOSE 38081
 
 # switch to user dinastycoin
 USER dinastycoin
 
-ENTRYPOINT ["dinastycoind", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=38080", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=18081", "--non-interactive", "--confirm-external-bind"]
+ENTRYPOINT ["dinastycoind", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=38080", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=38081", "--non-interactive", "--confirm-external-bind"]
 
