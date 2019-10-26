@@ -591,10 +591,10 @@ More info and versions in the [Debian package tracker](https://tracker.debian.or
     docker build --build-arg NPROC=1 -t dinastycoin .
     
     # either run in foreground
-    docker run -it -v /dinastycoin/chain:/root/.bitdinastycoin -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
+    docker run -it -v /dinastycoin/chain:/root/.dinastycoin -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
     
     # or in background
-    docker run -it -d -v /dinastycoin/chain:/root/.bitdinastycoin -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
+    docker run -it -d -v /dinastycoin/chain:/root/.dinastycoin -v /dinastycoin/wallet:/wallet -p 18080:18080 dinastycoin
     ```
 
 * The build needs 3 GB space.

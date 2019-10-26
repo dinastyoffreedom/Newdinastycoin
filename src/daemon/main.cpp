@@ -224,7 +224,7 @@ int main(int argc, char const * argv[])
     }
 
     // data_dir
-    //   default: e.g. ~/.bitdinastycoin/ or ~/.bitdinastycoin/testnet
+    //   default: e.g. ~/.dinastycoin/ or ~/.dinastycoin/testnet
     //   if data-dir argument given:
     //     absolute path
     //     relative path: relative to cwd
