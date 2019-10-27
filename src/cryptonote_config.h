@@ -229,7 +229,7 @@ std::string const GENESIS_TX = "010a01ff0007f3b6310267d4dc44908c55f1b4da4dda8dff
     uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX = 0x5498;         //SX
     uint16_t const P2P_DEFAULT_PORT = 37175;
     uint16_t const RPC_DEFAULT_PORT = 37176;
-    uint16_t const ZMQ_RPC_DEFAULT_PORT = 38082;
+    uint16_t const ZMQ_RPC_DEFAULT_PORT = 37177;
     boost::uuids::uuid const NETWORK_ID = { {
 0x59, 0x20, 0x52, 0xff, 0x11, 0x10, 0x5e, 0x2f, 0x59, 0x22, 0x09, 0xab, 0xf5, 0xa1, 0x02, 0x61
       } }; // Bender's daydream
