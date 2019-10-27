@@ -85,10 +85,10 @@ An anonymity network can be configured to forward incoming connections to a
 `dinastycoind` RPC port - which is independent from the configuration for incoming
 P2P anonymity connections. The anonymity network (Tor/i2p) is
 [configured in the same manner](#configuration), except the localhost port
-must be the RPC port (typically 38081 for mainnet) instead of the p2p port:
+must be the RPC port (typically 37176 for mainnet) instead of the p2p port:
 
 > HiddenServiceDir /var/lib/tor/data/dinastycoin
-> HiddenServicePort 38081 127.0.0.1:38081
+> HiddenServicePort 37176 127.0.0.1:37176
 
 Then the wallet will be configured to use a Tor/i2p address:
 > `--proxy 127.0.0.1:9050`

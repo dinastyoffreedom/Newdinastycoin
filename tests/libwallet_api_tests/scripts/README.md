@@ -2,7 +2,7 @@
 
 ## Environment for the tests
 * Running dinastycoin node, linked to private/public testnet. 
-  By default, tests expect daemon running at ```localhost:38081```,
+  By default, tests expect daemon running at ```localhost:37176```,
   can be overridden with environment variable ```TESTNET_DAEMON_ADDRESS=<your_daemon_address>```
   [Manual](https://github.com/dinastycoinexamples/private-testnet) explaining how to run private testnet.
 

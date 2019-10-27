@@ -5621,8 +5621,8 @@ ATTENTION : Ne réutilisez pas vos clés Dinastycoin avec un autre fork, À MOIN
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="255"/>
-        <source>Use daemon instance at port &lt;arg&gt; instead of 38081</source>
-        <translation>Utiliser l&apos;instance de démon située au port &lt;arg&gt; au lieu de 38081</translation>
+        <source>Use daemon instance at port &lt;arg&gt; instead of 37176</source>
+        <translation>Utiliser l&apos;instance de démon située au port &lt;arg&gt; au lieu de 37176</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="264"/>
