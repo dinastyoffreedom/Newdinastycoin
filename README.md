@@ -15,7 +15,6 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
   - [Coverage](#coverage)
   - [Introduction](#introduction)
   - [About this project](#about-this-project)
-  - [Supporting the project](#supporting-the-project)
   - [License](#license)
   - [Contributing](#contributing)
   - [Scheduled software upgrades](#scheduled-software-upgrades)
@@ -107,26 +106,6 @@ As with many development projects, the repository on Github is considered to be 
 
 **Anyone is welcome to contribute to Dinastycoin's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
 
-## Supporting the project
-
-Dinastycoin is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Dinastycoin and Bitcoin donations can be made to **donate.dinastycoin.com** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send DCY to the Dinastycoin donation address via the `donate` command (type `help` in the command-line wallet for details).
-
-The Dinastycoin donation address is: `44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A` (viewkey: `f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501`)
-
-The Bitcoin donation address is: `1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H`
-
-Core development funding and/or some supporting services are also graciously provided by sponsors:
-
-[<img width="80" src="https://static.getdinastycoin.org/images/sponsors/mydinastycoin.png"/>](https://mydinastycoin.com)
-[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/kitware.png?1"/>](https://kitware.com)
-[<img width="100" src="https://static.getdinastycoin.org/images/sponsors/dome9.png"/>](https://dome9.com)
-[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/araxis.png"/>](https://araxis.com)
-[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/jetbrains.png"/>](https://www.jetbrains.com/)
-[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/navicat.png"/>](https://www.navicat.com/)
-[<img width="150" src="https://static.getdinastycoin.org/images/sponsors/symas.png"/>](https://www.symas.com/)
-
-There are also several mining pools that kindly donate a portion of their fees, [a list of them can be found on our Bitcointalk post](https://bitcointalk.org/index.php?topic=583449.0).
-
 ## License
 
 See [LICENSE](LICENSE).
@@ -137,25 +116,7 @@ If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidel
 
 ## Scheduled software upgrades
 
-Dinastycoin uses a fixed-schedule software upgrade (hard fork) mechanism to implement new features. This means that users of Dinastycoin (end users and service providers) should run current versions and upgrade their software on a regular schedule. Software upgrades occur during the months of April and October. The required software for these upgrades will be available prior to the scheduled date. Please check the repository prior to this date for the proper Dinastycoin software version. Below is the historical schedule and the projected schedule for the next upgrade.
-Dates are provided in the format YYYY-MM-DD.
-
-
-| Software upgrade block height  | Date       | Fork version      | Minimum Dinastycoin version | Recommended Dinastycoin version | Details                                                                            |  
-| ------------------------------ | -----------| ----------------- | ---------------------- | -------------------------- | ---------------------------------------------------------------------------------- |
-| 1009827                        | 2016-03-22 | v2                | v0.9.4                 | v0.9.4                     | Allow only >= ringsize 3, blocktime = 120 seconds, fee-free blocksize 60 kb       |
-| 1141317                        | 2016-09-21 | v3                | v0.9.4                 | v0.10.0                    | Splits coinbase into denominations  |
-| 1220516                        | 2017-01-05 | v4                | v0.10.1                | v0.10.2.1                  | Allow normal and RingCT transactions |
-| 1288616                        | 2017-04-15 | v5                | v0.10.3.0              | v0.10.3.1                  | Adjusted minimum blocksize and fee algorithm      |
-| 1400000                        | 2017-09-16 | v6                | v0.11.0.0              | v0.11.0.0                  | Allow only RingCT transactions, allow only >= ringsize 5      |
-| 1546000                        | 2018-04-06 | v7                | v0.12.0.0              | v0.12.3.0                  | Cryptonight variant 1, ringsize >= 7, sorted inputs
-| 1685555                        | 2018-10-18 | v8                | v0.13.0.0              | v0.13.0.4                  | max transaction size at half the penalty free block size, bulletproofs enabled, cryptonight variant 2, fixed ringsize [11](https://youtu.be/KOO5S4vxi0o)
-| 1686275                        | 2018-10-19 | v9                | v0.13.0.0              | v0.13.0.4                  | bulletproofs required
-| 1788000                        | 2019-03-09 | v10               | v0.14.0.0              | v0.14.1.2                  | New PoW based on Cryptonight-R, new block weight algorithm, slightly more efficient RingCT format
-| 1788720                        | 2019-03-10 | v11               | v0.14.0.0              | v0.14.1.2                  | forbid old RingCT transaction format
-| XXXXXXX                        | 2019-10-XX | XX                | XXXXXXXXX              | XXXXXXXXX                  | X
-
-X's indicate that these details have not been determined as of commit date.
+Dinastycoin uses a fixed-schedule software upgrade (hard fork) mechanism to implement new features. This means that users of Dinastycoin (end users and service providers) should run current versions and upgrade their software on a regular schedule. Software upgrades occur during the months of April and October. The required software for these upgrades will be available prior to the scheduled date. Please check the repository prior to this date for the proper Dinastycoin software version. 
 
 ## Release staging schedule and protocol
 
@@ -219,7 +180,7 @@ FreeBSD one liner for required to build dependencies
 
 Clone recursively to pull-in needed submodule(s):
 
-`$ git clone --recursive https://github.com/dinastycoin-project/dinastycoin`
+`$ git clone --recursive https://github.com/dinastyoffreedom/Newdinastycoin.git dinastycoin`
 
 If you already have a repo cloned, initialize and update:
 
@@ -237,7 +198,6 @@ invokes cmake commands as needed.
 
     ```bash
     cd dinastycoin
-    git checkout release-v0.14
     make
     ```
 
@@ -311,9 +271,8 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 * Clone dinastycoin and checkout the most recent release version:
 
     ```bash
-    git clone https://github.com/dinastycoin-project/dinastycoin.git
+    git clone https://github.com/dinastyoffreedom/Newdinastycoin.git dinastycoin
     cd dinastycoin
-    git checkout tags/v0.14.1.2
     ```
 
 * Build:
@@ -419,7 +378,7 @@ application.
 * To git clone, run:
 
     ```bash
-    git clone --recursive https://github.com/dinastycoin-project/dinastycoin.git
+    git clone --recursive https://github.com/dinastyoffreedom/Newdinastycoin.git dinastycoin
     ```
 
 **Building**
@@ -430,10 +389,9 @@ application.
     cd dinastycoin
     ```
 
-* If you would like a specific [version/tag](https://github.com/dinastycoin-project/dinastycoin/tags), do a git checkout for that version. eg. 'v0.14.1.2'. If you don't care about the version and just want binaries from master, skip this step:
+* If you would like a specific [version/tag](https://github.com/dinastyoffreedom/Newdinastycoin/tags), do a git checkout for that version. eg. 'v0.14.1.2'. If you don't care about the version and just want binaries from master, skip this step:
 	
     ```bash
-    git checkout v0.14.1.2
     ```
 
 * If you are on a 64-bit system, run:
