@@ -2584,7 +2584,7 @@ void wallet2::process_parsed_blocks(uint64_t start_height, const std::vector<cry
       //end
       LOG_PRINT_L2("Processing genesis transaction: " << string_tools::pod_to_hex(get_transaction_hash(genesis.miner_tx)));
       std::vector<uint64_t> o_indices_genesis = {0}; //genesis transaction output
-      process_new_transaction(get_transaction_hash(genesis.miner_tx), genesis.miner_tx, o_indices_genesis, 0, genesis.timestamp, true, false, false,{});
+      process_new_transaction(get_transaction_hash(genesis.miner_tx), genesis.miner_tx, o_indices_genesis, 0, genesis.major_version, genesis.timestamp, true, false, false,{}, output_tracker_cache);
     } else {
       LOG_ERROR("Skip processing of genesis transaction, genesis block hash does not match: " << string_tools::pod_to_hex(get_block_hash(genesis)));
     }
