@@ -24,7 +24,7 @@ packages:
 - "python-dev"
 - "python-setuptools"
 remotes:
-- "url": "https://github.com/dinastycoin-project/dinastycoin.git"
+- "url": "https://github.com/dinastyoffreedom/Newdinastycoin.git"
   "dir": "dinastycoin"
 files:
 - "MacOSX10.11.sdk.tar.gz"

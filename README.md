@@ -28,10 +28,10 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Development resources
 
-- Web: [getdinastycoin.org](https://getdinastycoin.org)
+- Web: [getdinastycoin.org](https://www.dinastycoin.com)
 - Forum: [forum.getdinastycoin.org](https://forum.getdinastycoin.org)
 - Mail: [dev@getdinastycoin.org](mailto:dev@getdinastycoin.org)
-- GitHub: [https://github.com/dinastycoin-project/dinastycoin](https://github.com/dinastycoin-project/dinastycoin)
+- GitHub: [https://github.com/dinastyoffreedom/Newdinastycoin](https://github.com/dinastyoffreedom/Newdinastycoin)
 - IRC: [#dinastycoin-dev on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23dinastycoin-dev&prompt=1&uio=d4)
 
 ## Vulnerability response
@@ -590,7 +590,7 @@ and its home is the data directory specified in the [example
 config](utils/conf/dinastyd.conf).
 
 If you're on Mac, you may need to add the `--max-concurrency 1` option to
-dinastycoin-wallet-cli, and possibly dinastycoind, if you get crashes refreshing.
+dinasty-wallet-cli, and possibly dinastycoind, if you get crashes refreshing.
 
 ## Internationalization
 

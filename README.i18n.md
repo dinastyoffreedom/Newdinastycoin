@@ -3,7 +3,7 @@ Dinastycoin daemon internationalization
 
 The Dinastycoin command line tools can be translated in various languages. If you wish to contribute and need help/support, contact the [Dinastycoin Localization Workgroup on Taiga](https://taiga.getdinastycoin.org/project/erciccione-dinastycoin-localization/) or come chat on `#dinastycoin-translations` (Freenode/IRC, riot/matrix, MatterMost)
 
-In order to use the same translation workflow as the [Dinastycoin Core GUI](https://github.com/dinastycoin-project/dinastycoin-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
+In order to use the same translation workflow as the [Dinastycoin Core GUI](https://github.com/dinastyoffreedom/Newdinastycoin-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
 
 ### Tools for translators
 
@@ -40,7 +40,7 @@ To build translations after modifying them:
 To test a translation:
 
 ```bash
-LANG=es ./build/release/bin/dinastycoin-wallet-cli
+LANG=es ./build/release/bin/dinasty-wallet-cli
 ```
 
 To add new translatable strings in the source code:

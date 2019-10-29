@@ -1425,7 +1425,7 @@ Transaction </translation>
  ask-password &lt;0|1|2   (or never|action|decrypt)&gt;
    action: ask the password before many actions such as transfer, etc
    decrypt: same as action, but keeps the spend key encrypted in memory when not needed
- unit &lt;dinastycoin|millinero|micronero|nanonero|piconero&gt;
+ unit &lt;dinastycoin|millidcy|microdcy|nanodcy&gt;
    Set the default dinastycoin (sub-)unit.
  min-outputs-count [n]
    Try to keep at least that many outputs of value at least min-outputs-value.
@@ -2938,7 +2938,7 @@ Sinon, vous prouvez le plus petit solde supérieur à &lt;montant&gt; dans votre
 To start synchronizing with the daemon, use the &quot;refresh&quot; command.
 Use the &quot;help&quot; command to see the list of available commands.
 Use &quot;help &lt;command&gt;&quot; to see a command&apos;s documentation.
-Always use the &quot;exit&quot; command when closing dinastycoin-wallet-cli to save 
+Always use the &quot;exit&quot; command when closing dinasty-wallet-cli to save 
 your current session&apos;s state. Otherwise, you might need to synchronize 
 your wallet again (your wallet keys are NOT at risk in any case).
 </source>
@@ -2946,7 +2946,7 @@ your wallet again (your wallet keys are NOT at risk in any case).
 Pour commencer la synchronisation avec le démon, utilisez la commande &quot;refresh&quot;.
 Utilisez la commande &quot;help&quot; pour voir la liste des commandes disponibles.
 Utilisez &quot;help &lt;commande&gt;&quot; pour voir la documentation d&apos;une commande.
-Utilisez toujours la commande &quot;exit&quot; pour fermer dinastycoin-wallet-cli pour sauvegarder 
+Utilisez toujours la commande &quot;exit&quot; pour fermer dinasty-wallet-cli pour sauvegarder 
 l&apos;état de votre session. Sinon, vous pourriez avoir besoin de synchroniser 
 votre portefeuille à nouveau (mais les clés de votre portefeuille ne risquent rien).
 </translation>
@@ -3825,8 +3825,8 @@ Image de clé, &quot;absolue&quot;, liste de cercles</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3445"/>
-        <source>dinastycoin, millinero, micronero, nanonero, piconero</source>
-        <translation>dinastycoin, millinero, micronero, nanonero, piconero</translation>
+        <source>dinastycoin, millidcy, microdcy, nanodcy</source>
+        <translation>dinastycoin, millidcy, microdcy, nanodcy</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3456"/>

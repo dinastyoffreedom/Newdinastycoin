@@ -1,5 +1,5 @@
 #!/bin/bash
 
 
-rlwrap dinastycoin-wallet-cli --wallet-file wallet_02.bin --password "" --testnet --trusted-daemon --daemon-address localhost:37176  --log-file wallet_01.log
+rlwrap dinasty-wallet-cli --wallet-file wallet_02.bin --password "" --testnet --trusted-daemon --daemon-address localhost:37176  --log-file wallet_01.log
 

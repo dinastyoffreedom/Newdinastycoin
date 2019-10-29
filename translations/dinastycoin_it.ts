@@ -1712,7 +1712,7 @@ Se viene specificato l&apos;argomento &quot;tag_description&quot;, al tag &lt;ta
  ask-password &lt;0|1|2   (or never|action|decrypt)&gt;
    action: ask the password before many actions such as transfer, etc
    decrypt: same as action, but keeps the spend key encrypted in memory when not needed
- unit &lt;dinastycoin|millinero|micronero|nanonero|piconero&gt;
+ unit &lt;dinastycoin|millidcy|microdcy|nanodcy&gt;
    Set the default dinastycoin (sub-)unit.
  min-outputs-count [n]
    Try to keep at least that many outputs of value at least min-outputs-value.
@@ -2077,7 +2077,7 @@ Otherwise, you prove the reserve of the smallest possible amount above &lt;amoun
 To start synchronizing with the daemon, use the &quot;refresh&quot; command.
 Use the &quot;help&quot; command to see the list of available commands.
 Use &quot;help &lt;command&gt;&quot; to see a command&apos;s documentation.
-Always use the &quot;exit&quot; command when closing dinastycoin-wallet-cli to save 
+Always use the &quot;exit&quot; command when closing dinasty-wallet-cli to save 
 your current session&apos;s state. Otherwise, you might need to synchronize 
 your wallet again (your wallet keys are NOT at risk in any case).
 </source>
@@ -2085,7 +2085,7 @@ your wallet again (your wallet keys are NOT at risk in any case).
 Per avviare la sincronizzazione con il daemon, utilizzare il comando &quot;refresh&quot;.
 Utilizzare il comando &quot;help&quot; per visualizzare l&apos;elenco dei comandi disponibili.
 Usa &quot;help &lt;command&gt;&quot; per vedere la documentazione di un comando.
-Usa sempre il comando &quot;exit&quot; quando chiudi dinastycoin-wallet-cli per salvare lo 
+Usa sempre il comando &quot;exit&quot; quando chiudi dinasty-wallet-cli per salvare lo 
 stato della sessione corrente. In caso contrario, potrebbe essere necessario sincronizzare 
 di nuovo il tuo portafoglio (le chiavi del tuo portafoglio NON sono in nessun caso a rischio).
 </translation>
@@ -3252,8 +3252,8 @@ Key Image, &quot;absolute&quot;, list of rings</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3445"/>
-        <source>dinastycoin, millinero, micronero, nanonero, piconero</source>
-        <translation>dinastycoin, millinero, micronero, nanonero, piconero</translation>
+        <source>dinastycoin, millidcy, microdcy, nanodcy</source>
+        <translation>dinastycoin, millidcy, microdcy, nanodcy</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3456"/>

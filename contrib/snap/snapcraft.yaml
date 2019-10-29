@@ -1,6 +1,6 @@
 name: dinastycoin
 version: 0.11.1.0-1
-summary: "Dinastycoin: the secure, private, untraceable cryptocurrency https://getdinastycoin.org"
+summary: "Dinastycoin: the secure, private, untraceable cryptocurrency https://www.dinastycoin.com"
 description: |
     Dinastycoin is a private, secure, untraceable, decentralised digital currency.
     You are your bank, you control your funds, and nobody can trace your transfers
@@ -23,9 +23,9 @@ apps:
             - home
             - network
             - network-bind
-    dinastycoin-wallet-cli:
+    dinasty-wallet-cli:
         command: |
-          dinastycoin-wallet-cli --log-file ${SNAP_USER_DATA}
+          dinasty-wallet-cli --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network

@@ -340,7 +340,7 @@ namespace rct {
     }
 
     //generates a random uint long long (for testing)
-    dcy_amount randXmrAmount(dcy_amount upperlimit) {
+    dcy_amount randDcyAmount(dcy_amount upperlimit) {
         return h2d(skGen()) % (upperlimit);
     }
 

@@ -4,7 +4,7 @@ function send_funds {
     local amount=$1
     local dest=$(cat "$2.address.txt")
 
-    dinastycoin-wallet-cli --wallet-file wallet_m --password "" \
+    dinasty-wallet-cli --wallet-file wallet_m --password "" \
         --testnet --trusted-daemon --daemon-address localhost:37176  --log-file wallet_m.log \
         --command transfer $dest $amount 
 }

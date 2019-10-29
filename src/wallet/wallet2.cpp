@@ -2571,7 +2571,26 @@ void wallet2::process_parsed_blocks(uint64_t start_height, const std::vector<cry
 {
   size_t current_index = start_height;
   blocks_added = 0;
+  //this is newly added code by kgcdream2019
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  //Force processing of genesis transaction
+  if ((m_blockchain.size() == 1) && (start_height == 0)) {
+    cryptonote::block genesis;
+    generate_genesis(genesis);
 
+    if (m_blockchain[0] == get_block_hash(genesis)) {
+      //this is newly added code for debug
+      MGINFO_YELLOW("-------force processing of genesis transaction ..." << ENDL);
+      //end
+      LOG_PRINT_L2("Processing genesis transaction: " << string_tools::pod_to_hex(get_transaction_hash(genesis.miner_tx)));
+      std::vector<uint64_t> o_indices_genesis = {0}; //genesis transaction output
+      process_new_transaction(get_transaction_hash(genesis.miner_tx), genesis.miner_tx, o_indices_genesis, 0, genesis.timestamp, true, false, false,{});
+    } else {
+      LOG_ERROR("Skip processing of genesis transaction, genesis block hash does not match: " << string_tools::pod_to_hex(get_block_hash(genesis)));
+    }
+  }
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  //end
   THROW_WALLET_EXCEPTION_IF(blocks.size() != parsed_blocks.size(), error::wallet_internal_error, "size mismatch");
   THROW_WALLET_EXCEPTION_IF(!m_blockchain.is_in_bounds(current_index), error::out_of_hashchain_bounds_error);
 
@@ -11669,15 +11688,22 @@ uint64_t wallet2::get_daemon_blockchain_target_height(string &err)
 uint64_t wallet2::get_approximate_blockchain_height() const
 {
   // time of v2 fork
-  const time_t fork_time = m_nettype == TESTNET ? 1448285909 : m_nettype == STAGENET ? 1520937818 : 1458748658;
+  //const time_t fork_time = m_nettype == TESTNET ? 1448285909 : m_nettype == STAGENET ? 1520937818 : 1458748658;
+  // dinastycoin time of v2 fork 2019-09-30 13:30:00 (1569850200)
+  const time_t fork_time = m_nettype == TESTNET ? 1569850200 : m_nettype == STAGENET ? 1569850200 : 1569850200;
+  
   // v2 fork block
-  const uint64_t fork_block = m_nettype == TESTNET ? 624634 : m_nettype == STAGENET ? 32000 : 1009827;
+  //const uint64_t fork_block = m_nettype == TESTNET ? 624634 : m_nettype == STAGENET ? 32000 : 1009827;
+  const uint64_t fork_block = m_nettype == TESTNET ? 20 : m_nettype == STAGENET ? 20 : 20;
+  
   // avg seconds per block
   const int seconds_per_block = DIFFICULTY_TARGET_V2;
   // Calculated blockchain height
-  uint64_t approx_blockchain_height = fork_block + (time(NULL) - fork_time)/seconds_per_block;
+  time_t cur = time(NULL);
+  if(cur < fork_time ) cur = fork_time;
+  uint64_t approx_blockchain_height = fork_block + (cur - fork_time)/seconds_per_block;
   // testnet got some huge rollbacks, so the estimation is way off
-  static const uint64_t approximate_testnet_rolled_back_blocks = 303967;
+  static const uint64_t approximate_testnet_rolled_back_blocks = 20;
   if (m_nettype == TESTNET && approx_blockchain_height > approximate_testnet_rolled_back_blocks)
     approx_blockchain_height -= approximate_testnet_rolled_back_blocks;
   LOG_PRINT_L2("Calculated blockchain height: " << approx_blockchain_height);
@@ -13243,7 +13269,7 @@ std::vector<std::pair<uint64_t, uint64_t>> wallet2::estimate_backlog(const std::
     uint64_t nblocks_min = priority_weight_min / full_reward_zone;
     uint64_t nblocks_max = priority_weight_max / full_reward_zone;
     MDEBUG("estimate_backlog: priority_weight " << priority_weight_min << " - " << priority_weight_max << " for "
-        << our_fee_byte_min << " - " << our_fee_byte_max << " piconero byte fee, "
+        << our_fee_byte_min << " - " << our_fee_byte_max << " nanodcy byte fee, "
         << nblocks_min << " - " << nblocks_max << " blocks at block weight " << full_reward_zone);
     blocks.push_back(std::make_pair(nblocks_min, nblocks_max));
   }
@@ -13282,10 +13308,10 @@ uint64_t wallet2::get_segregation_fork_height() const
   {
     // All four DinastycoinPulse domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls = {
-        "segheights.dinastycoinpulse.org",
-        "segheights.dinastycoinpulse.net",
-        "segheights.dinastycoinpulse.co",
-        "segheights.dinastycoinpulse.se"
+        "segheights1.dinastycoin.com",
+        "segheights2.dinastycoin.com",
+        "segheights3.dinastycoin.com",
+        "segheights4.dinastycoin.com"
     };
 
     const uint64_t current_height = get_blockchain_current_height();

@@ -56,7 +56,7 @@ TEST(ringct, Borromean)
         bits indi;
 
         for (j = 0 ; j < N ; j++) {
-            indi[j] = (int)randXmrAmount(2);
+            indi[j] = (int)randDcyAmount(2);
 
             xv[j] = skGen();
             if ( (int)indi[j] == 0 ) {

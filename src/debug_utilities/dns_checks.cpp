@@ -139,10 +139,10 @@ int main(int argc, char* argv[])
 #if 0
   lookup(LOOKUP_TXT, {"testpoints.dinastycoinpulse.org", "testpoints.dinastycoinpulse.net", "testpoints.dinastycoinpulse.co", "testpoints.dinastycoinpulse.se");
 
-  lookup(LOOKUP_TXT, {"stagenetpoints.dinastycoinpulse.org", "stagenetpoints.dinastycoinpulse.net", "stagenetpoints.dinastycoinpulse.co", "stagenetpoints.dinastycoinpulse.se"});
+  lookup(LOOKUP_TXT, {"stagenetpoints2.dinastycoin.com", "stagenetpoints3.dinastycoin.com", "stagenetpoints4.dinastycoin.com", "stagenetpoints1.dinastycoin.com"});
 #endif
 
-  lookup(LOOKUP_TXT, {"segheights.dinastycoinpulse.org", "segheights.dinastycoinpulse.net", "segheights.dinastycoinpulse.co", "segheights.dinastycoinpulse.se"});
+  lookup(LOOKUP_TXT, {"segheights1.dinastycoin.com", "segheights2.dinastycoin.com", "segheights3.dinastycoin.com", "segheights4.dinastycoin.com"});
 
   return 0;
   CATCH_ENTRY_L0("main", 1);

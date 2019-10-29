@@ -1603,7 +1603,7 @@ If the &quot;tag_description&quot; argument is specified, the tag &lt;tag_name&g
  ask-password &lt;0|1|2   (or never|action|decrypt)&gt;
    action: ask the password before many actions such as transfer, etc
    decrypt: same as action, but keeps the spend key encrypted in memory when not needed
- unit &lt;dinastycoin|millinero|micronero|nanonero|piconero&gt;
+ unit &lt;dinastycoin|millidcy|microdcy|nanodcy&gt;
    Set the default dinastycoin (sub-)unit.
  min-outputs-count [n]
    Try to keep at least that many outputs of value at least min-outputs-value.
@@ -1929,7 +1929,7 @@ Key Image, &quot;absolute&quot;, list of rings</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3445"/>
-        <source>dinastycoin, millinero, micronero, nanonero, piconero</source>
+        <source>dinastycoin, millidcy, microdcy, nanodcy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2292,7 +2292,7 @@ Key Image, &quot;absolute&quot;, list of rings</source>
 To start synchronizing with the daemon, use the &quot;refresh&quot; command.
 Use the &quot;help&quot; command to see the list of available commands.
 Use &quot;help &lt;command&gt;&quot; to see a command&apos;s documentation.
-Always use the &quot;exit&quot; command when closing dinastycoin-wallet-cli to save 
+Always use the &quot;exit&quot; command when closing dinasty-wallet-cli to save 
 your current session&apos;s state. Otherwise, you might need to synchronize 
 your wallet again (your wallet keys are NOT at risk in any case).
 </source>

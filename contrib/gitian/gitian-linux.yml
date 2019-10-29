@@ -43,7 +43,7 @@ packages:
 - "libprotobuf-dev"
 - "python3-zmq"
 remotes:
-- "url": "https://github.com/dinastycoin-project/dinastycoin.git"
+- "url": "https://github.com/dinastyoffreedom/Newdinastycoin.git"
   "dir": "dinastycoin"
 files: []
 script: |
