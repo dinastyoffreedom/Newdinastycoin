@@ -2566,18 +2566,18 @@ void wallet2::pull_hashes(uint64_t start_height, uint64_t &blocks_start_height, 
   blocks_start_height = res.start_height;
   hashes = std::move(res.m_block_ids);
 }
-//----------------------------------------------------------------------------------------------------
-void wallet2::process_parsed_blocks(uint64_t start_height, const std::vector<cryptonote::block_complete_entry> &blocks, const std::vector<parsed_block> &parsed_blocks, uint64_t& blocks_added, std::map<std::pair<uint64_t, uint64_t>, size_t> *output_tracker_cache)
+void wallet2::force_confirm_genesis_block(uint64_t start_height, std::map<std::pair<uint64_t, uint64_t>, size_t> *output_tracker_cache)
 {
-  size_t current_index = start_height;
-  blocks_added = 0;
   //this is newly added code by kgcdream2019
   //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   //Force processing of genesis transaction
+    //this is newly added code for debug
+    LOG_PRINT_L2("-------process_parsed_blocks ...block_size = " << m_blockchain.size() << "   start_height = " << start_height << ENDL);
+    //end
   if ((m_blockchain.size() == 1) && (start_height == 0)) {
     cryptonote::block genesis;
     generate_genesis(genesis);
-
+     MGINFO_YELLOW("-------process_parsed_blocks -> generate_genesis ...------------------------------------------------" << ENDL);
     if (m_blockchain[0] == get_block_hash(genesis)) {
       //this is newly added code for debug
       MGINFO_YELLOW("-------force processing of genesis transaction ..." << ENDL);
@@ -2591,9 +2591,18 @@ void wallet2::process_parsed_blocks(uint64_t start_height, const std::vector<cry
   }
   //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   //end
+}
+//----------------------------------------------------------------------------------------------------
+void wallet2::process_parsed_blocks(uint64_t start_height, const std::vector<cryptonote::block_complete_entry> &blocks, const std::vector<parsed_block> &parsed_blocks, uint64_t& blocks_added, std::map<std::pair<uint64_t, uint64_t>, size_t> *output_tracker_cache)
+{
+  size_t current_index = start_height;
+  blocks_added = 0;
+
   THROW_WALLET_EXCEPTION_IF(blocks.size() != parsed_blocks.size(), error::wallet_internal_error, "size mismatch");
   THROW_WALLET_EXCEPTION_IF(!m_blockchain.is_in_bounds(current_index), error::out_of_hashchain_bounds_error);
-
+  //added by kgc
+  force_confirm_genesis_block(start_height,output_tracker_cache);
+  //end
   tools::threadpool& tpool = tools::threadpool::getInstance();
   tools::threadpool::waiter waiter;
 
@@ -3189,6 +3198,10 @@ std::shared_ptr<std::map<std::pair<uint64_t, uint64_t>, size_t>> wallet2::create
 //----------------------------------------------------------------------------------------------------
 void wallet2::refresh(bool trusted_daemon, uint64_t start_height, uint64_t & blocks_fetched, bool& received_money, bool check_pool)
 {
+  //this is newly added code for debug
+  MGINFO_YELLOW("allet2::refresh is called trusted_daemon = " << trusted_daemon << "\t start_height = " << start_height 
+        << "\t block_fetched " << blocks_fetched <<"\t received_money = " << received_money << "\t check_pool = " << check_pool <<ENDL);
+  //end
   if (m_offline)
   {
     blocks_fetched = 0;
@@ -3274,7 +3287,11 @@ void wallet2::refresh(bool trusted_daemon, uint64_t start_height, uint64_t & blo
   });
 
   auto scope_exit_handler_hwdev = epee::misc_utils::create_scope_leave_handler([&](){hwdev.computing_key_images(false);});
+  //modified by kgc
   bool first = true;
+  //bool first = false;
+  //end
+  
   while(m_run.load(std::memory_order_relaxed))
   {
     uint64_t next_blocks_start_height;
@@ -3284,6 +3301,9 @@ void wallet2::refresh(bool trusted_daemon, uint64_t start_height, uint64_t & blo
     std::exception_ptr exception;
     try
     {
+      //added by kgc
+      // force_confirm_genesis_block(blocks_start_height,output_tracker_cache.get());
+      //end
       // pull the next set of blocks while we're processing the current one
       error = false;
       exception = NULL;
