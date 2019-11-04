@@ -279,12 +279,12 @@ namespace nodetool
     virtual void remove_used_stripe_peer(const typename t_payload_net_handler::connection_context &context);
     virtual void clear_used_stripe_peers();
 
-  private:
+ private:
     const std::vector<std::string> m_seed_nodes_list =
-    { "seeds.dinastycoinseeds.se"
-    , "seeds.dinastycoinseeds.ae.org"
-    , "seeds.dinastycoinseeds.ch"
-    , "seeds.dinastycoinseeds.li"
+    { "seed1.dinastycoin.com"
+    , "seed2.dinastycoin.com"
+    , "seed3.dinastycoin.com"
+    , "seed4.dinastycoin.com"
     };
 
     bool islimitup=false;
