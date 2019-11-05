@@ -6,7 +6,7 @@
 
 */
 
-// Copyright (c) 2015-2019, The Dinastycoin Project
+// Parts are Copyright (c) 2019, The Dinastycoin team
 // 
 // All rights reserved.
 // 

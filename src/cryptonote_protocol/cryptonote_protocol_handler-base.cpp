@@ -2,7 +2,7 @@
 /// @author rfree (current maintainer in dinastycoin.cc project)
 /// @brief This is the place to implement our handlers for protocol network actions, e.g. for ratelimit for download-requests
 
-// Copyright (c) 2015-2019, The Dinastycoin Project
+// Parts are Copyright (c) 2019, The Dinastycoin team
 // 
 // All rights reserved.
 // 

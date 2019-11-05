@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2019, The Dinastycoin Project
+// Parts are Copyright (c) 2019, The Dinastycoin team
 // 
 // All rights reserved.
 // 
@@ -26,7 +26,7 @@
 // STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // 
-// Parts of this file are originally copyright (c) 2012-2013 The Cryptonote developers
+// Parts of this file are originally copyright (c) 2015-2019 The Monero Project
 
 #include <unordered_set>
 #include <random>

@@ -1,6 +1,6 @@
 // Word list created by Dinastycoin contributor Shrikez
 // 
-// Copyright (c) 2015-2019, The Dinastycoin Project
+// Parts are Copyright (c) 2019, The Dinastycoin team
 // 
 // All rights reserved.
 // 

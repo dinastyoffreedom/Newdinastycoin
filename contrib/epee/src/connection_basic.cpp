@@ -2,7 +2,7 @@
 /// @author rfree (current maintainer in dinastycoin.cc project)
 /// @brief base for connection, contains e.g. the ratelimit hooks
 
-// Copyright (c) 2015-2019, The Dinastycoin Project
+// Parts are Copyright (c) 2019, The Dinastycoin team
 // 
 // All rights reserved.
 // 
