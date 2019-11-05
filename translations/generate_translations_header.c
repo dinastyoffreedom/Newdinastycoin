@@ -1,5 +1,5 @@
 // Copyright (c) 2013, Sergey Lyubka
-// Copyright (c) 2017-2019, The Dinastycoin Project
+// Parts are Copyright (c) 2019, The Dinastycoin team
 // All rights reserved.
 // Released under the MIT license.
 
