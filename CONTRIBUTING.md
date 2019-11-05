@@ -56,7 +56,8 @@ the previous paragraph is here.
 ## License
 
 Copyright (c) 2009-2015 Pieter Hintjens.
-Copyright (c) 2017-2018 The Dinastycoin Project.
+Copyright (c) 2017-2018 Copyright (c) 2014-2019 The Monero Project.
+Parts are Copyright (c) 2019 The Dinastycoin team
 
 This Specification is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
