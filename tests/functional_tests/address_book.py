@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #encoding=utf-8
 
-# Copyright (c) 2019 The Dinastycoin Project
+# Parts are Copyright (c) 2019, The Dinastycoin team
 # 
 # All rights reserved.
 # 

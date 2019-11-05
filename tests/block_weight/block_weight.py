@@ -2,7 +2,7 @@
 # Simulate a maximal block attack on the Dinastycoin network
 # This uses the scheme proposed by ArticMine
 # Written by Sarang Nother
-# Copyright (c) 2019 The Dinastycoin Project
+# Parts are Copyright (c) 2019, The Dinastycoin team
 from __future__ import print_function
 import sys
 import math

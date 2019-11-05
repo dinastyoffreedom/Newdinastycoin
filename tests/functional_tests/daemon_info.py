@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Copyright (c) 2018 The Dinastycoin Project
+# Parts are Copyright (c) 2019, The Dinastycoin team
 # 
 # All rights reserved.
 # 

@@ -4339,7 +4339,7 @@ This transaction (including %s change) will unlock on block %llu, in approximate
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7073"/>
-        <source>Donating %s %s to The Dinastycoin Project (donate.dinastycoin.com or %s).</source>
+        <source>Donating %s %s to The Dinastycoin team (donate.dinastycoin.com or %s).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

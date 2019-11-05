@@ -1038,8 +1038,8 @@
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7073"/>
-        <source>Donating %s %s to The Dinastycoin Project (donate.dinastycoin.com or %s).</source>
-        <translation>Donare %s %s a The Dinastycoin Project (donate.dinastycoin.com o %s).</translation>
+        <source>Donating %s %s to The Dinastycoin team (donate.dinastycoin.com or %s).</source>
+        <translation>Donare %s %s a The Dinastycoin team (donate.dinastycoin.com o %s).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7075"/>
