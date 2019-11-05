@@ -129,7 +129,7 @@ int main(int argc, char* argv[])
   mlog_configure("", true);
   mlog_set_categories("+" DINASTYCOIN_DEFAULT_LOG_CATEGORY ":INFO");
 
-  lookup(LOOKUP_A, {"seeds.dinastycoinseeds.se", "seeds.dinastycoinseeds.ae.org", "seeds.dinastycoinseeds.ch", "seeds.dinastycoinseeds.li"});
+  lookup(LOOKUP_A, {"seed1.dinastycoin.com", "seed2.dinastycoin.com", "seed3.dinastycoin.com", "seed4.dinastycoin.com"});
 
   lookup(LOOKUP_TXT, {"updates.dinastycoin.com", "updates.dinastycoinpulse.net", "updates.dinastycoinpulse.co", "updates.dinastycoinpulse.se"});
 
