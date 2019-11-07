@@ -11709,8 +11709,8 @@ uint64_t wallet2::get_approximate_blockchain_height() const
 {
   // time of v2 fork
   //const time_t fork_time = m_nettype == TESTNET ? 1448285909 : m_nettype == STAGENET ? 1520937818 : 1458748658;
-  // dinastycoin time of v2 fork 2019-09-30 13:30:00 (1569850200)
-  const time_t fork_time = m_nettype == TESTNET ? 1569850200 : m_nettype == STAGENET ? 1569850200 : 1569850200;
+  // dinastycoin time of v2 fork 2019-11-12 13:30:00 (1573565400)
+  const time_t fork_time = m_nettype == TESTNET ? 1573565400 : m_nettype == STAGENET ? 1573565400 : 1573565400;
   
   // v2 fork block
   //const uint64_t fork_block = m_nettype == TESTNET ? 624634 : m_nettype == STAGENET ? 32000 : 1009827;
