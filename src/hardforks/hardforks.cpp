@@ -53,15 +53,15 @@ const hardfork_t mainnet_hard_forks[] = {
   // version 7 starts from block 1546000, which is on or around the 6th of April, 2018. Fork time finalised on 2018-03-17.
   { 7, 120, 0, 1532356226 },
 
-  // version 8 starts from block 1685555, which is on or around the 18th of October, 2018. Fork time finalised on 2018-09-02.
-  { 8, 72875, 0, 1541572216 },
+  // version 8 starts from block 72875, which is on or around the 18th of October, 2018. Fork time finalised on 2018-09-02.
+  { 8, 5700, 0, 1541572216 },
 
-  // version 9 starts from block 1686275, which is on or around the 19th of October, 2018. Fork time finalised on 2018-09-02.
-  { 9, 73595, 0, 1541846405 },
+  // version 9 starts from block 73595, which is on or around the 19th of October, 2018. Fork time finalised on 2018-09-02.
+  { 9, 5900, 0, 1541846405 },
   // version 10 starts from block 77850
-  { 10, 77850, 0, 1542911469 },
-  { 11, 183478, 0, 1556115272 },
-  { 12, 184198, 0, 1556201672 },
+  { 10, 6100, 0, 1542911469 },
+  { 11, 6300, 0, 1556115272 },
+  { 12, 6500, 0, 1556201672 },
 };
 const size_t num_mainnet_hard_forks = sizeof(mainnet_hard_forks) / sizeof(mainnet_hard_forks[0]);
 const uint64_t mainnet_hard_fork_version_1_till = 1009826;
