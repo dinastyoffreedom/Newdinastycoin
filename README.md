@@ -373,6 +373,11 @@ application.
 * Open the MingW shell via `MinGW-w64-Win64 Shell` shortcut on 64-bit Windows
   or `MinGW-w64-Win64 Shell` shortcut on 32-bit Windows. Note that if you are
   running 64-bit Windows, you will have both 64-bit and 32-bit MinGW shells.
+  
+*  Install git
+
+     pacman -S git
+
 
 **Cloning**
 
