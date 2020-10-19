@@ -161,7 +161,7 @@ namespace cryptonote
   static const command_line::arg_descriptor<std::string> arg_check_updates = {
     "check-updates"
   , "Check for new versions of dinastycoin: [disabled|notify|download|update]"
-  , "notify"
+  , "disabled"
   };
   static const command_line::arg_descriptor<bool> arg_fluffy_blocks  = {
     "fluffy-blocks"
