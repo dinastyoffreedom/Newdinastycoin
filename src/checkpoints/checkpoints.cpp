@@ -35,6 +35,7 @@
 #include "storages/portable_storage_template_helper.h" // epee json include
 #include "serialization/keyvalue_serialization.h"
 #include <vector>
+#include <boost/bind.hpp>
 
 using namespace epee;
 

@@ -28,8 +28,10 @@
 
 #include "portable_storage_template_helper.h"
 #include <boost/utility/value_init.hpp>
+#include <boost/bind.hpp>
 #include "span.h"
 #include "net/levin_base.h"
+
 
 #undef DINASTYCOIN_DEFAULT_LOG_CATEGORY
 #define DINASTYCOIN_DEFAULT_LOG_CATEGORY "net"

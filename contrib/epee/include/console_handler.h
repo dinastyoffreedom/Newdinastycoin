@@ -40,7 +40,7 @@
 #include <boost/thread.hpp>
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/split.hpp>
-
+#include <boost/bind.hpp>
 #ifdef HAVE_READLINE
   #include "readline_buffer.h"
 #endif
