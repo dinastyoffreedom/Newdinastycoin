@@ -4620,6 +4620,7 @@ crypto::secret_key wallet2::generate(const std::string& wallet_, const epee::wip
    uint64_t local_height = get_daemon_blockchain_height(err);
    if (err.empty() && local_height > height)
      height = local_height;
+   return 0;
    return height;
  }
 
