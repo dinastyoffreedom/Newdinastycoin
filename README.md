@@ -7,10 +7,6 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 ## Table of Contents
 
   - [Development resources](#development-resources)
-  - [Vulnerability response](#vulnerability-response)
-  - [Research](#research)
-  - [Announcements](#announcements)
-  - [Translations](#translations)
   - [Build Status](#build-status)
     - [IMPORTANT](#important)
   - [Coverage](#coverage)
@@ -30,34 +26,11 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 ## Development resources
 
 - Web: [getdinastycoin.org](https://www.dinastycoin.com)
-- Forum: [forum.getdinastycoin.org](https://forum.getdinastycoin.org)
 - Mail: [dev@getdinastycoin.org](mailto:dev@getdinastycoin.org)
 - GitHub: [https://github.com/dinastyoffreedom/Newdinastycoin](https://github.com/dinastyoffreedom/Newdinastycoin)
 - IRC: [#dinastycoin-dev on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23dinastycoin-dev&prompt=1&uio=d4)
 
-## Vulnerability response
 
-- Our [Vulnerability Response Process](https://github.com/dinastycoin-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
-- We are also available via [HackerOne](https://hackerone.com/dinastycoin)
-
-## Research
-
-The [Dinastycoin Research Lab](https://src.getdinastycoin.org/resources/research-lab/) is an open forum where the community coordinates research into Dinastycoin cryptography, protocols, fungibility, analysis, and more. We welcome collaboration and contributions from outside researchers! Because not all Lab work and publications are distributed as traditional preprints or articles, they may be easy to miss if you are conducting literature reviews for your own Dinastycoin research. You are encouraged to get in touch with our researchers if you have questions, wish to collaborate, or would like guidance to help avoid unnecessarily duplicating earlier or known work.
-
-Our researchers are available on IRC in [#dinastycoin-research-lab on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23dinastycoin-research-lab&prompt=1&uio=d4) or by email:
-
-- Sarang Noether, Ph.D.: [sarang@getdinastycoin.org](mailto:sarang@getdinastycoin.org) or [sarang.noether@protonmail.com](mailto:sarang.noether@protonmail.com); [research repository](https://github.com/SarangNoether/research-lab)
-- Surae Noether (Brandon Goodell), Ph.D.: [surae@getdinastycoin.org](mailto:surae@getdinastycoin.org) or [surae.noether@protonmail.com](mailto:surae.noether@protonmail.com); [research repository](https://github.com/b-g-goodell/research-lab)
-
-## Announcements
-
-- You can subscribe to an [announcement listserv](https://lists.getdinastycoin.org) to get critical announcements from the Dinastycoin core team. The announcement list can be very helpful for knowing when software updates are needed.
-
-## Translations
-The CLI wallet is available in different languages. If you want to help translate it, see our self-hosted localization platform, Weblate, on [translate.getdinastycoin.org](https://translate.getdinastycoin.org/projects/CLI/). Every translation *must* be uploaded on the platform, pull requests directly editing the code in this repository will be closed. If you need help with Weblate, you can find a guide with screenshots [here](https://github.com/dinastycoin-ecosystem/dinastycoin-translations/blob/master/weblate.md).
-&nbsp;
-
-If you need help/support/info about translations, contact the localization workgroup. You can find the complete list of contacts on the repository of the workgroup: [dinastycoin-translations](https://github.com/dinastycoin-ecosystem/dinastycoin-translations#contacts).
 
 ## Build Status
 
