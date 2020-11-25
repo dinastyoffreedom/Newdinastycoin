@@ -26,9 +26,9 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 ## Development resources
 
 - Web: [getdinastycoin.org](https://www.dinastycoin.com)
+- Forum: [bitcointalk.org](https://bitcointalk.org/index.php?topic=3069548)
 - Mail: [dev@getdinastycoin.org](mailto:dev@getdinastycoin.org)
 - GitHub: [https://github.com/dinastyoffreedom/Newdinastycoin](https://github.com/dinastyoffreedom/Newdinastycoin)
-- IRC: [#dinastycoin-dev on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23dinastycoin-dev&prompt=1&uio=d4)
 
 
 
