@@ -631,7 +631,7 @@ namespace nodetool
       full_addrs.insert("35.178.95.77:37175");
       full_addrs.insert("35.178.32.185:37175");
       full_addrs.insert("35.176.51.4:37175");
-      full_addrs.insert("52.56.146.20:37175");
+      full_addrs.insert("3.8.236.183:37175");
     }
     return full_addrs;
   }
